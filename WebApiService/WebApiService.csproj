@@ -651,6 +651,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Images\DB.sql" />
     <Content Include="Images\elements\bg.png" />
     <Content Include="Images\elements\dropcap_gray.png" />
     <Content Include="Images\elements\layout-one-boxed.png" />
