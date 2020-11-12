@@ -1,0 +1,19 @@
+﻿<ul class="list-group" ng-show="getKategoriler.result">
+    <li class="list-group-item fontsize-14"> Kategori Seçiniz</li>
+    <li class="list-group-item" ng-repeat="kat in getKategoriler.result">
+        <div class="funkyradio">
+
+            <div class="funkyradio-success" style="opacity:1">
+                <input class="js-scroll-by" type="radio" name="radioBir" ng-click="clickSatilikKiralik(kat.id)" id="kat{{kat.id}}" ng-model="parametersearch.SatilikId" value="{{kat.id}}" />
+
+                <label class="bold" style="background-color:#fff;" for="kat{{kat.id}}">{{kat.kategoriAd}}   </label>
+
+            </div>
+        </div>
+    </li>
+    @*<li class="list-group-item list-group-item-info">
+            <button class="btn btn-success js-scroll-by bold" style="display: block; width: 100%; background-color:#1889C1;">İlerle >></button>
+        </li>*@
+    
+</ul>
+

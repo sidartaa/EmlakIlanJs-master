@@ -1,0 +1,68 @@
+﻿<div  class="navbar navbar-default navbar-static-top" ng-controller="InfinityScrollController">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            @*@Html.ActionLink("-----", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-left">
+
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                @*<li><a href="/Home/IlanDetay/1">Ana Sayfa</a></li>*@   
+                <li><a href="/Home/Index">Ana Sayfa</a></li>
+                <li><a href="/Home/Ilanlar">Ilanlar</a></li>
+                <li><a href="Home/Contact">İletişim</a></li>
+                <li ng-show="!token"><a href="/Home/Login">Giriş</a></li>
+
+                <li ng-show="token" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Panel<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/Home/ProfilPage">İlanlar</a></li>
+                        @*<li class="dropdown-header">Nav header</li>*@
+                        <li><a href="Home/ManageUser">İlan Ekle </a></li>
+                        <li role="separator" class="divider"></li>
+                        <li ng-show="token"><a href="" ng-click="Cikis()">Çıkış </a></li>
+
+
+                    </ul>
+                </li>
+
+                @*<li>
+                    @Html.ActionLink("Arama", "Search", "Home")
+                    <a href="" ng-click="getlink('/Home/Search')" >search</a>
+                </li>*@
+                @*<li>
+                    @Html.ActionLink("İlan Ver", "ProfilPage", "Login")
+                </li>*@
+                @*<li>
+                    @Html.ActionLink("Giriş", "Index", "Login")
+                </li>*@
+                @*<li>
+                    @Html.ActionLink("İletişim", "Contact", "Home")
+                </li>*@
+                <li>
+                    <a href="#" class="pull-left">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="pull-left">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+
+                @*
+            <li>
+                @{var ctx = HttpContext.Current.GetOwinContext();
+                System.Security.Claims.ClaimsPrincipal user = ctx.Authentication.User;
+                IEnumerable<System.Security.Claims.Claim> claims = user.Claims;}
+            </li>*@
+                @*@Html.Partial("_LoginPartial")*@
+            </ul>
+
+        </div>
+    </div>
+</div>

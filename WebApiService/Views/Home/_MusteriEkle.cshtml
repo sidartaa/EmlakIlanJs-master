@@ -1,0 +1,198 @@
+﻿
+<div class="container body-content" ng-cloak>
+    <div class="row" style="margin-top:20px">
+        <div class="col-md-12">
+            <span ng-show="!isMusteriSaveLoading" class="viewLoading">
+                <img src="~/Content/Images/loading.gif" /> loading...
+            </span>
+            <div ng-class="result">{{message}}</div>
+            <div class="panel panel-default">
+                <div class="panel-heading">İlan Ekle</div>
+                <div class="panel-body">
+
+                    <div class="col-md-6 site-margin-bottom-10">
+                        <a href="/Create" type="button" class="btn btn-lg btn-primary btn-block">
+                            <span class="visible-xs-block visible-sm-block visible-md-block visible-lg-block">✔ Yeni İlan Ekle</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 site-margin-bottom-10">
+                        <a href="/Musteriler" type="button" class="btn btn-lg btn-default btn-block">
+                            <span class="visible-xs-block visible-sm-block visible-md-block visible-lg-block">✔ Müşteriler <span class="badge">4</span></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <form name="frmMusteri" novalidate>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Müşteriler</div>
+                    <div class="panel-body">
+                        <section id="musteriForm" ng-cloak>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="Ad">Ad</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" ng-model="musteri.Ad" name="Ad" placeholder="" required type="text">
+                                    <div ng-show="frmMusteri.$submitted || frmMusteri.Ad.$touched">
+                                        <span class="error fade in" ng-show="frmMusteri.Ad.$error.required">* İsim alanı zorunludur.</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="Soyad">Soyad</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" ng-model="musteri.Soyad" name="Soyad" placeholder="" required type="text">
+                                    <div ng-show="frmMusteri.$submitted || frmMusteri.Soyad.$touched">
+                                        <span class="error fade in" ng-show="frmMusteri.Soyad.$error.required">* Soyad alanı zorunludur.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="Cep">CepTelefonu</label>
+                                <div class="col-md-12">
+
+                                    <input class="form-control" ng-model="musteri.CepTelefonu" name="Cep" required type="text" />
+                                    <div ng-show="frmMusteri.$submitted || frmMusteri.Cep.$touched">
+                                        <span class="error fade in" ng-show="frmMusteri.Cep.$error.required">* Cep telefonu alanı zorunludur.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="Email">Email</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" ng-model="musteri.Email" name="Email" placeholder="" type="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="EnDusukFiyat">En Düşük Fiyat</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" ng-model="musteri.EnDusukFiyat" name="EnDusukFiyat" placeholder="" type="text">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="EnYuksekFiyat">En Yüksek Fiyat</label>
+                                <div class="col-md-12">
+                                    <input class="form-control" ng-model="musteri.EnYuksekFiyat" name="EnYuksekFiyat" placeholder="" type="text">
+
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">İlan Türü</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="Kategori"></label>
+                            <div class="col-md-12">
+                                <div class="funkyradio">
+
+                                    <div class="col-md-4" ng-repeat="kat in getKategoriler.result">
+                                        <div class="funkyradio-success">
+                                            <input type="checkbox" name="selectedFruits[]" value="{{kat.id}}" ng-checked="musteri.Kategori.indexOf(kat.id) > -1" ng-click="toggleSelection(kat.id)" id="Kategori{{kat.id}}" ng-required="!musteri.Kategori" checked />
+                                            <label for="Kategori{{kat.id}}">{{kat.kategoriAd}}</label>
+
+                                        </div>
+                                    </div>
+
+                                    @*<pre>{{selectionic|json}}  </pre>*@
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="Kategori"></label>
+                            <div class="col-md-12">
+                                <div class="funkyradio">
+                                    <div class="col-md-4" ng-repeat="kat in getIlanTuru.result">
+                                        <div class="funkyradio-success">
+                                            <input type="checkbox" name="Ilanturu[]" ng-checked="selectiondis.indexOf(kat.id) > -1" id="ilanturu{{kat.id}}" value="{{kat.id}}" ng-required="!musteri.Kategori" ng-click="disSelection(kat.id)" />
+                                            <label for="ilanturu{{kat.id}}">{{kat.kategoriAd}}</label>
+                                        </div>
+                                    </div>
+                                    @*<pre>{{selectiondis|json}}  </pre>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Lakasyon</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="Lacation"></label>
+                            <div class="col-md-12">
+                                <div class="funkyradio">
+                                    <div class="col-md-3" ng-repeat="kat in getLocation.result">
+                                        <div class="funkyradio-success">
+                                            <input type="checkbox" name="Lacal[]" ng-checked="selectionLocation.indexOf(kat.id) > -1" id="local{{kat.id}}" value="{{kat.id}}" ng-required="!musteri.Location" ng-click="locSelection(kat.id)" />
+                                            <label for="local{{kat.id}}">{{kat.locationName}}</label>
+                                        </div>
+                                    </div>
+                                    @*<pre>{{selectionLocation|json}}  </pre>*@
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label" for="Lacation"></label>
+                            <div class="col-md-12">
+                                <div class="funkyradio">
+                                    <div class="col-md-3" ng-repeat="kat in getSemt.result">
+                                        <div class="funkyradio-success">
+                                            <input type="checkbox" name="Semt[]" ng-checked="selectionSemt.indexOf(kat.id) > -1" id="semt{{kat.id}}" value="{{kat.id}}" ng-required="!musteri.Location" ng-click="semSelection(kat.id)" />
+                                            <label for="semt{{kat.id}}">{{kat.locationName}}</label>
+                                        </div>
+                                    </div>
+                                    @*<pre>{{selectionSemt|json}}  </pre>*@
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Lakasyon</div>
+                    <div class="panel-body">
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"></label>
+                            <div class="col-md-12">
+                                <div class="funkyradio">
+                                    <div class="col-md-12">
+
+                                        <div class="funkyradio-success">
+                                            <input type="radio" name="statu" ng-model="musteri.Statu" ng-required="!musteri.Statu" id="k1" value="1" />
+                                            <label for="k1">Aktif Müşteri</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="funkyradio-success">
+                                            <input type="radio" name="statu" ng-model="musteri.Statu" ng-required="!musteri.Statu" id="k0" value="0" />
+                                            <label for="k0">Pasif Müşteri</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{musteri|json}}
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"></label>
+                            <div class="col-md-12">
+                                <input value="Kaydet" class="btn btn-primary col-md-12" type="submit" ng-click="musteriSave()" @*ng-disabled="frmMusteri.$invalid"*@>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+

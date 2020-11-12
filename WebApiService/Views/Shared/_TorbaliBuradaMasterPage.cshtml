@@ -1,0 +1,304 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - 535 383 3310</title>
+    <base href="/">
+    <base />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="description" content="İzmir torbalı ilçesinde emlak ilanları, satılık ve kiralık daireler, konut, arsa ve işyeri ilanlarını bulabileceğiniz torbalının ilan sitesidir." />
+    @*@Styles.Render("~/Content/boots")*@
+   
+   
+    @*@Styles.Render("~/Content/revolutionslider")*@
+    @Styles.Render("~/Content/ovlcss")
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/form")
+   
+</head>
+<body ng-app="torbaliBurada">
+    @Html.Partial("_Header")
+    @Html.Partial("_Logo")
+    @Html.Partial("_Testere")
+    @*@Html.Partial("_Slider")*@
+
+    @*@Html.Partial("_KurumsalBasvuruFormu")*@
+    @*@Html.Partial("_Testere")*@
+    @RenderBody()
+
+    @*@Html.Partial("_Testere")
+        @Html.Partial("_KurumsalUyelerimiz")*@
+    @*@Html.Partial("_Testere")
+        @Html.Partial("_SliderIki")*@
+    @Html.Partial("_Testere")
+    @Html.Partial("_Footer")
+
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/boottap")
+    @*@Scripts.Render("~/bundles/imgeffect")*@
+    @Scripts.Render("~/bundles/angular")
+
+    @Scripts.Render("~/bundles/formjs")
+    @Scripts.Render("~/bundles/ovljss")
+    @*@Scripts.Render("~/bundles/revolutionsliderjs")*@
+    @RenderSection("scripts", required: false)
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var owl = $("#tren");
+            owl.owlCarousel({
+                items: 1,
+                onDragged: callback,
+                pagination: false,
+                autoplay: false,
+                lazyLoad: true,
+                slideSpeed: 1000,
+                nav: false,
+                dots: true,
+               
+                itemsCustom: [
+                    [0, 1],
+                    [480, 1],
+                    [600, 1],
+                    [768, 1],
+                    [800, 1],
+                    [980, 1],
+                    [1024, 1],
+                    [1280, 1],
+                    [1920, 1]
+                ]
+            });
+
+            $(".trennext").click(function () {
+                var n = $(this).index();
+               // console.log(n);
+                owl.trigger("owl.next");
+            });
+            $(".trenprev").click(function () {
+                owl.trigger("owl.prev");
+            });
+           
+
+            function callback(event) {
+                // Provided by the core
+                var element = event.target;         // DOM element, in this example .owl-carousel
+                var name = event.type;           // Name of the event, in this example dragged
+                var namespace = event.namespace;      // Namespace of the event, in this example owl.carousel
+                var items = event.item.count;     // Number of items
+                var item = event.item.index;     // Position of the current item
+                // Provided by the navigation plugin
+                var pages = event.page.count;     // Number of pages
+                var page = event.page.index;     // Position of the current page
+                var size = event.page.size;      // Number of items per page
+               
+                console.log("element: " + element);
+            }
+            // Listen to owl events:
+
+            owl.on('dragged.owl.carousel',
+                function (event) {
+                    var element = event.target;         // DOM element, in this example .owl-carousel
+                    var name = event.type;           // Name of the event, in this example dragged
+                    var namespace = event.namespace;      // Namespace of the event, in this example owl.carousel
+                    var items = event.item.count;     // Number of items
+                    var item = event.item.index;     // Position of the current item
+                    // Provided by the navigation plugin
+                    var pages = event.page.count;     // Number of pages
+                    var page = event.page.index;     // Position of the current page
+                    var size = event.page.size;      // Number of items per page
+                    var n = $(this).index();
+                    console.log(n);
+                    console.log("element: " + element);
+                });
+
+          
+
+        });
+
+
+        (function () {
+
+            'use strict';
+
+            // Feature Test
+            if ('querySelector' in document && 'addEventListener' in window && Array.prototype.forEach) {
+
+                // Function to animate the scroll
+                var smoothScroll = function (anchor, duration) {
+
+                    // Calculate how far and how fast to scroll
+                    var startLocation = window.pageYOffset;
+                    var endLocation = anchor.offsetTop;
+                    var distance = endLocation - startLocation;
+                    var increments = distance / (duration / 16);
+                    var stopAnimation;
+
+                    // Scroll the page by an increment, and check if it's time to stop
+                    var animateScroll = function () {
+                        window.scrollBy(0, increments);
+                        stopAnimation();
+                    };
+
+                    // If scrolling down
+                    if (increments >= 0) {
+                        // Stop animation when you reach the anchor OR the bottom of the page
+                        stopAnimation = function () {
+                            var travelled = window.pageYOffset;
+                            if ((travelled >= (endLocation - increments)) || ((window.innerHeight + travelled) >= document.body.offsetHeight)) {
+                                clearInterval(runAnimation);
+                            }
+                        };
+                    }
+                        // If scrolling up
+                    else {
+                        // Stop animation when you reach the anchor OR the top of the page
+                        stopAnimation = function () {
+                            var travelled = window.pageYOffset;
+                            if (travelled <= (endLocation || 0)) {
+                                clearInterval(runAnimation);
+                            }
+                        };
+                    }
+
+                    // Loop the animation function
+                    var runAnimation = setInterval(animateScroll, 16);
+
+                };
+
+                // Define smooth scroll links
+                var scrollToggle = document.querySelectorAll('.scroll');
+
+                // For each smooth scroll link
+                [].forEach.call(scrollToggle, function (toggle) {
+
+                    // When the smooth scroll link is clicked
+                    toggle.addEventListener('click', function (e) {
+
+                        // Prevent the default link behavior
+                        e.preventDefault();
+
+                        // Get anchor link and calculate distance from the top
+                        var dataID = toggle.getAttribute('href');
+                        var dataTarget = document.querySelector(dataID);
+                        var dataSpeed = toggle.getAttribute('data-speed');
+
+                        // If the anchor exists
+                        if (dataTarget) {
+                            // Scroll to the anchor
+                            smoothScroll(dataTarget, dataSpeed || 500);
+                        }
+
+                    }, false);
+
+                });
+
+            }
+
+        })();
+        $(document).ready(function () {
+
+            $('.dropdown-toggle').dropdown();
+
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 100) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+                $('.scrollToTop').on("click", function (e) {
+                    e.preventDefault();
+                    $("body, html").animate({ scrollTop: 100 }, 'slow');
+                });
+            });
+
+
+            //      var bLazy = new Blazy({
+            //          breakpoints: [{
+            //              width: 420// Max-width
+            //            , src: 'data-src-small'
+            //          }]
+            //, success: function (element) {
+            //    setTimeout(function () {
+            //        var parent = element.parentNode;
+            //        parent.className = parent.className.replace(/\bloading\b/, '');
+            //    }, 200);
+            //}
+            //      });
+            $('.nav-tabs a').click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            // slide to top of panel-group accordion
+            $('.panel-group').on('shown.bs.collapse', function () {
+                var panel = $(this).find('.in');
+                $('html, body').animate({
+                    scrollTop: panel.offset().top + (-60)
+                }, 500);
+            });
+
+        });
+        $(document).on('click', '.navbar-collapse.in', function (e) {
+            if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle') {
+                $(this).collapse('hide');
+            }
+        });
+
+        window.addEventListener('load', function () {
+
+        });
+
+        var resize_images;
+
+        resize_images = function (resize) {
+            var images, resize_process, resize_single;
+            if (resize == null) {
+                resize = false;
+            }
+            resize_single = function (that) {
+                if (that.height() <= 500) {
+                    return that.css({
+                        'width': 'auto',
+                        'height': '100%'
+                    });
+                } else {
+                    return that.css({
+                        'width': '100%',
+                        'height': 'auto'
+                    });
+                }
+            };
+            resize_process = function (that) {
+                that.css({
+                    'width': 'auto',
+                    'height': 'auto'
+                });
+                resize_single(that);
+                return resize_single(that);
+            };
+            images = $('.itemm .imgg');
+            return images.each(function () {
+                if (resize) {
+                    return resize_process($(this));
+                } else {
+                    return $(this).on('load', function () {
+                        return resize_process($(this));
+                    }).each(function () {
+                        if (this.complete) $(this).trigger('load');
+                    });
+                }
+            });
+        };
+
+        resize_images();
+
+        $(window).resize(function () {
+            return resize_images(true);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+﻿<a class="btn btn-default btn-select btn-select-light">
+    <input ng-model="parameter.id" type="hidden" class="btn btn-select-input" id="" name="" value="" />
+    <span class="btn btn-select-value kategori">
+        <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+        İlan Kategorisi Seçiniz
+    </span>
+    <span class='btn btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+    <ul>
+        <li ng-repeat="kat in getKategoriler.result"
+            ng-click="clickSatilikKiralik(kat.id)"
+            id="{{kat.id}}"
+            ng-model="parameter.id">
+            {{kat.kategoriAd}}
+        </li>
+
+    </ul>
+</a>
+@*<select class="selectpicker" title="İlan Kategorisini Seçiniz"  ng-show="getKategoriler.result" ng-cloak  ng-model="parameters.id" ng-change="clickSatilikKiralik(parameters.id)">
+        <option ng-repeat="kat in getKategoriler.result" value="{{kat.id}}">{{kat.kategoriAd}}</option>
+    </select>*@
+

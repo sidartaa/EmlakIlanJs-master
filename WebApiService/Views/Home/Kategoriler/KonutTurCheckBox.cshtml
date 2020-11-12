@@ -1,0 +1,17 @@
+﻿<ul ng-show="" class="list-group" ng-show="emlakKonutTipi.result">
+    <li class="list-group-item fontsize-14"> Emlak Türünü Seçiniz</li>
+    <li class="list-group-item" ng-repeat="kat in emlakKonutTipi.result" ng-cloak>
+        <div class="funkyradio">
+            <div class="col-md-3">
+                <div class="funkyradio-success">
+                    <input type="radio" name="KonutTipi" ng-model="parametersearch.KonutTipi" id="konuttipi{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.KonutTipi" />
+                    <label for="konuttipi{{kat.id}}">{{kat.konutTipi}}</label>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="list-group-item list-group-item-info" ng-show="emlakKonutTipi.result">
+        <button class="btn btn-success js-scroll-by bold" style="display: block; width: 100%; background-color:#1889C1;" ng-click="emlakIlanSerach()">İlan Filtrele >></button>
+        @*<input type="button" style="margin-bottom:10px;" class="btn btn-primary col-xs-12 col-md-12 col-sm-12 col-md-12 lg" scroll-to="#catalogSection" ng-click="emlakIlanSerach()" value="Filtrele" />*@
+    </li>
+</ul>

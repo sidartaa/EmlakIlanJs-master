@@ -1,0 +1,143 @@
+2016-09-17 11:15:37,061 [1] INFO TorbaliBurada.Core.Common.Loging.Logger [(null)] - Baþladý
+2016-09-17 11:18:32,763 [5] INFO TorbaliBurada.Core.Common.Loging.Logger [(null)] - Baþladý
+2016-10-16 12:01:45,603 [8] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IlanResimlerResponse -> IlanResimler
+Torbali.Core.Common.Contracts.ResponseMessages.IlanResimlerResponse -> TorbaliBurada.Data.CodeFirst.Entity.IlanResimler
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IlanResimlerResponse -> IlanResimler
+Torbali.Core.Common.Contracts.ResponseMessages.IlanResimlerResponse -> TorbaliBurada.Data.CodeFirst.Entity.IlanResimler
+   konum: lambda_method(Closure , Object , Object , ResolutionContext )
+   konum: AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass3_0.<CreateeAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 54
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-10-16 12:03:28,937 [8] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IlanResimlerResponse -> IlanResimler
+Torbali.Core.Common.Contracts.ResponseMessages.IlanResimlerResponse -> TorbaliBurada.Data.CodeFirst.Entity.IlanResimler
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+IlanResimlerResponse -> IlanResimler
+Torbali.Core.Common.Contracts.ResponseMessages.IlanResimlerResponse -> TorbaliBurada.Data.CodeFirst.Entity.IlanResimler
+   konum: lambda_method(Closure , Object , Object , ResolutionContext )
+   konum: AutoMapper.Mapper.AutoMapper.IMapper.Map[TDestination](Object source)
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass3_0.<CreateeAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 54
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-10-17 09:37:19,469 [23] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+System.NotSupportedException: A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+   konum: System.Data.Entity.Internal.ThrowingMonitor.EnsureNotEntered()
+   konum: System.Data.Entity.Core.Objects.ObjectContext.SaveChangesAsync(SaveOptions options, CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync()
+   konum: TorbaliBurada.Data.RepostoryBase`2.SaveChangeAsync() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Data\RepostoryBase.cs içinde: satýr 69
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass3_0.<CreateeAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 56
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-10-17 10:00:37,379 [75] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+System.NotSupportedException: A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+   konum: System.Data.Entity.Internal.ThrowingMonitor.EnsureNotEntered()
+   konum: System.Data.Entity.Core.Objects.ObjectContext.SaveChangesAsync(SaveOptions options, CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync()
+   konum: TorbaliBurada.Data.RepostoryBase`2.SaveChangeAsync() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Data\RepostoryBase.cs içinde: satýr 69
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass3_0.<CreateeAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 56
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-10-17 10:00:37,444 [92] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+System.NotSupportedException: A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+   konum: System.Data.Entity.Internal.ThrowingMonitor.EnsureNotEntered()
+   konum: System.Data.Entity.Core.Objects.ObjectContext.SaveChangesAsync(SaveOptions options, CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync()
+   konum: TorbaliBurada.Data.RepostoryBase`2.SaveChangeAsync() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Data\RepostoryBase.cs içinde: satýr 69
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass3_0.<CreateeAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 56
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-10-17 10:09:02,711 [11] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+System.NotSupportedException: A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+   konum: System.Data.Entity.Internal.ThrowingMonitor.EnsureNotEntered()
+   konum: System.Data.Entity.Core.Objects.ObjectContext.SaveChangesAsync(SaveOptions options, CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync()
+   konum: TorbaliBurada.Data.RepostoryBase`2.SaveChangeAsync() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Data\RepostoryBase.cs içinde: satýr 69
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass3_0.<CreateeAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 56
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-10-17 11:38:08,402 [7] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+System.NotSupportedException: A second operation started on this context before a previous asynchronous operation completed. Use 'await' to ensure that any asynchronous operations have completed before calling another method on this context. Any instance members are not guaranteed to be thread safe.
+   konum: System.Data.Entity.Internal.ThrowingMonitor.EnsureNotEntered()
+   konum: System.Data.Entity.Core.Objects.ObjectContext.SaveChangesAsync(SaveOptions options, CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.InternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.Internal.LazyInternalContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync(CancellationToken cancellationToken)
+   konum: System.Data.Entity.DbContext.SaveChangesAsync()
+   konum: TorbaliBurada.Data.RepostoryBase`2.SaveChangeAsync() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Data\RepostoryBase.cs içinde: satýr 69
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass3_0.<CreateeAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 56
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-11-11 21:54:14,152 [8] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+System.NullReferenceException: Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+   konum: System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   konum: System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   konum: System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   konum: System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   konum: System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   konum: System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   konum: System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   konum: System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   konum: System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   konum: System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   konum: System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   konum: System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass6_0.<GetResimAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 89
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-11-11 21:54:14,152 [11] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+System.NullReferenceException: Nesne baþvurusu bir nesnenin örneðine ayarlanmadý.
+   konum: System.Data.Entity.Core.Objects.ELinq.QueryParameterExpression.EvaluateParameter(Object[] arguments)
+   konum: System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   konum: System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__6()
+   konum: System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   konum: System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   konum: System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   konum: System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   konum: System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   konum: System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   konum: System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   konum: System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   konum: System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass6_0.<GetResimAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 89
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-11-11 21:59:00,607 [8] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - Sýra hiçbir öðe içermiyor
+System.InvalidOperationException: Sýra hiçbir öðe içermiyor
+   konum: System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   konum: System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   konum: System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass6_0.<GetResimAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 89
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33
+2016-11-11 21:59:00,630 [10] ERROR TorbaliBurada.Core.Common.Loging.Logger [(null)] - Sýra hiçbir öðe içermiyor
+System.InvalidOperationException: Sýra hiçbir öðe içermiyor
+   konum: System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__0[TResult](IEnumerable`1 sequence)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   konum: System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   konum: System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   konum: System.Linq.Queryable.First[TSource](IQueryable`1 source)
+   konum: TorbaliBurada.Business.EmlakEngine.IlanResimlerEngine.<>c__DisplayClass6_0.<GetResimAsync>b__0() C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\EmlakEngine\IlanResimlerEngine.cs içinde: satýr 89
+   konum: TorbaliBurada.Business.BusinessEngineBase.ExecuteWithExceptionHandledOperation[T](Func`1 func) C:\Users\Sidarta\Documents\Visual Studio 2015\Projects\TorbaliBurada\TorbaliBurada.Business\BusinessEngineBase.cs içinde: satýr 33

@@ -1,0 +1,92 @@
+﻿<div class="container body-content" ng-cloak>
+    <div class="row" style="margin-top:20px">
+        
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">İlan Ekle</div>
+                <div class="panel-body">
+
+                    <div class="col-md-6 site-margin-bottom-10">
+                        <a href="/Create" type="button" class="btn btn-lg btn-primary btn-block">
+                            <span class="visible-xs-block visible-sm-block visible-md-block visible-lg-block">✔ Yeni İlan Ekle</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 site-margin-bottom-10">
+                        <a href="/MusteriEkle" type="button" class="btn btn-lg btn-default btn-block">
+                            <span class="visible-xs-block visible-sm-block visible-md-block visible-lg-block">✔ Müşteri Ekle <span class="badge">4</span></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">Müşteriler</div>
+                <div class="panel-body">
+                    <div class="col-md-12">
+                        <span ng-show="isMusteriSaveLoading" class="viewLoading">
+                            <img src="~/Content/Images/loading.gif" /> loading...
+                        </span>
+                    </div>
+                    @*<div class="accordion" ng-show="!isMusteriSaveLoading">
+                        <div ng-repeat="item in Musteriler">
+                            <h4 class="accordion-toggle">{{item.ad}}</h4>
+                            <div class="accordion-content">
+                                <p ng-repeat="kategori in item.kategoriIlan">
+                                    {{kategori.baslik}}
+                                </p>
+                                <hr />
+                                <p ng-repeat="location in item.lacationIlan">
+                                    {{iteö.baslik}}
+                                </p>
+                            </div>
+                        </div>
+                      
+
+                        <h4 class="accordion-toggle">Accordion 2</h4>
+                        <div class="accordion-content">
+                            <p>
+                                Lorem ipsum dolor sit amet mauris eu turpis.
+                            </p>
+                        </div>
+
+                        <h4 class="accordion-toggle">Accordion 3</h4>
+                        <div class="accordion-content">
+                            <p>
+                                Vivamus facilisisnibh scelerisque laoreet.
+                            </p>
+                        </div>
+                    </div>*@
+                    <div class="list-group" ng-show="!isMusteriSaveLoading">
+                        <a class="list-group-item list-group-item-action active">ddd</a>
+                        <a ng-repeat="item in Musteriler" class="list-group-item justify-content-between ">
+                          {{item.id}} :  {{item.ad}}
+                           
+                            <span class="badge badge-default badge-pill">{{item.countLocation}} bölge</span>
+                            <span class="badge badge-default badge-pill">{{item.countKategori}} kategori </span>
+                           
+                        </a>
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- panel-group -->
+    </div>
+    <div class="row">
+        
+        
+    </div>
+</div>
+<script>
+        $(document).ready(function () {
+            $('.accordion').find('.accordion-toggle').click(function () {
+                $(this).next().slideToggle('600');
+                $(".accordion-content").not($(this).next()).slideUp('600');
+            });
+            $('.accordion-toggle').on('click', function () {
+                $(this).toggleClass('active').siblings().removeClass('active');
+            });
+        });
+</script>

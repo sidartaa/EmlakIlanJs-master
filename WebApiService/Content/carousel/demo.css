@@ -1,0 +1,110 @@
+body {
+  padding-top: 50px;
+  font-family: 'Droid Sans', sans-serif;
+}
+.row {
+    margin-top: 40px;
+    margin-bottom: 80px;
+}
+
+.my-slider {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    font-size:0;
+}
+.my-slider li {
+    font-size:30px;
+    position:relative;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.my-slider .debug {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background: rgba(0,0,0,0.7);
+    color:white;
+    font-size: 12px;
+    width: 100%;
+    padding: 5px;
+}
+.my-slider.standard li {
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+.my-slider.nested {
+    width: 300px;
+    height: 200px;
+}
+.my-slider.nested li {
+    padding: 10px;
+}
+.my-slider.nested {
+    width: 300px;
+    height: 200px;
+}
+.my-slider.nested li {
+    padding: 10px;
+}
+.big {
+    margin-top: 30px;
+    width: 100%;
+    font-size: 30px;
+}
+.controls {
+    margin-top: 5px;
+    width: 450px;
+    text-align: center;
+}
+.thumbs {
+    width: 450px;
+    text-align:center;
+}
+.thumb {
+    display: inline-block;
+    background-size:cover;
+    border: 1px solid transparent;
+    margin: 2px 4px;
+    width: 60px;
+    height: 40px;
+    transition: border 0.2s ease-in;
+}
+.is-active {
+    border: 1px solid red;
+}
+.details {
+    color:white;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+#multiple-images-slider {
+    max-width: none;
+}
+
+#multiple-images-slider [class^="col-"] {
+    padding: 0;
+}
+
+#vertical-slider {
+    height: 350px;
+}
+
+#show-next-slider li {
+    background-size: 98%;
+    background-repeat: no-repeat;
+}
+
+/* override default controls */
+.rn-carousel-control {
+    color:white;
+    text-shadow: 0 0 5px #000;
+}
+.rn-carousel-control.rn-carousel-control-prev:before {
+  content: "❮";
+}
+.rn-carousel-control.rn-carousel-control-next:before {
+  content: "❯";
+}

@@ -1,0 +1,96 @@
+﻿
+@{
+    // Layout = "~/Views/Shared/_LoginMasterPage.cshtml";
+    ViewBag.Title = "Index";
+    ViewBag.Ip = System.Web.HttpContext.Current.Request.ServerVariables["REMOTE_ADDR"];
+
+}
+
+<hr style="border:0; margin-top:30px">
+<div class="container body-content">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">Giriş</div>
+            <div class="panel-body">
+                <div class="col-md-8">
+
+                    <section id="loginForm" ng-cloak>
+                    
+                        <div ng-show="isViewLoading" class="list-group">
+
+                            <a class="list-group-item list-group-item-danger" href="#">{{message}}</a>
+                        </div>
+                        <form name="frmCustomer">
+
+                            <hr style="border:0; margin-top:10px">
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Email</label>
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userLoginEmail" name="userLoginEmail" placeholder="E-Mail adresi" required type="email">
+
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+
+                                <label class="col-md-3 control-label">Şifre</label>
+
+
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userLoginPassword" name="userLoginPassword" required ng-minlength="6" type="password">
+
+                                </div>
+                                <div class="col-md-12">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label">Resim doğrulama</label>
+                                <div class="col-md-9">
+                                    <div vc-recaptcha key="publicKey"></div>
+                                    <input type="hidden" value="@ViewBag.Ip" ng-model="userLoginIp" name="userLoginIp" />
+                                 
+                                   
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <br />
+                                    @*<input value="Giriş" class="btn btn-default" type="submit" ng-click="login()" ng-disabled="frmCustomer.$invalid">*@
+                                    <button type="submit" class="btn btn-primary" ng-click="login()" ng-disabled="frmCustomer.$invalid">
+                                        <span ng-show="searchButtonText == 'Searching'"><i class="glyphicon glyphicon-refresh spinning"></i></span>
+                                        {{ searchButtonText }}
+                                    </button>
+                                </div>
+
+                            </div>
+                            <div class="form-group">
+                                <div class="col-md-offset-3 col-md-9">
+                                    <span class="error fade in" ng-show="(frmCustomer.$dirty||submitted) && frmCustomer.userLoginEmail.$error.required">*E-mail adresi giriniz</span>
+                                    @*<span class="error" ng-show="frmCustomer.$dirty && frmCustomer.userLoginEmail.$error.minlength">*Minimum email karekter uzunluğu 5 karakter olmalıdir.</span>*@
+                                    <span class="error fade in" ng-show="(frmCustomer.$dirty ||submitted) && frmCustomer.$error.email">Geçersiz E-Mail adresi girdiniz.</span>
+                                    <span class="error fade in" ng-show="(frmCustomer.$dirty||submitted) && frmCustomer.userLoginPassword.$error.required">* Şifre giriniz</span>
+                                    @*<span class="alert alert-danger" ng-show="frmCustomer.$dirty && frmCustomer.userLoginEmail.$error.minlength">Minimum uzunluk 5 dir.</span><br />*@
+                                    <span class="error fade in" ng-show="(frmCustomer.$dirty ||submitted) && frmCustomer.userLoginPassword.$error.minlength">Şifreniz en az 6 karakter olmalıdır.</span>
+                                </div>
+                            </div>
+                            @*<p>
+                                    <a href="/Login/Register">Yeni Üyelik Al</a>
+                                </p>*@
+
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        @*<div class="col-md-4">
+                <section id="socialLoginForm"></section>
+            </div>*@
+    </div>
+
+</div>
+
+
+

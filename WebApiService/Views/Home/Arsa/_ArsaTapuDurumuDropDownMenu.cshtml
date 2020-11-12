@@ -1,0 +1,10 @@
+﻿<a ng-show="ArsaTipi" class="btn btn-default btn-select btn-select-light">
+    <input type="hidden" class="btn-select-input" id="" name="" value="" />
+    <span class="btn-select-value">Arsa Tapu Durumunu Seçiniz</span>
+    <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+    <ul>
+        <li ng-repeat="kat in emlakTapuDurumu.result" ng-cloak ng-model="parameters.EmlakTapuDurumu" ng-click="clickArsaTapuDurumu(kat.id)" id="kat{{kat.id}}">
+           {{kat.tapuDurumu}}
+        </li>
+    </ul>
+</a>

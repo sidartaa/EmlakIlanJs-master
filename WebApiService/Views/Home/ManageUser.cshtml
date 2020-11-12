@@ -1,0 +1,791 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_TorbaliBuradaMasterPage.cshtml";
+}
+<div ng-controller="IlanEkleController" class="container body-content" style="margin-top:20px;">
+    <div class="panel panel-default">
+        <div class="panel-heading">İlan Ekle</div>
+        <div class="panel-body">
+
+            <div class="col-md-6 site-margin-bottom-10">
+                <a href="/Musteriler" type="button" class="btn btn-lg btn-primary btn-block">
+                    <span class="visible-xs-block visible-sm-block visible-md-block visible-lg-block">✔ Müşteriler</span>
+                </a>
+            </div>
+            <div class="col-md-6 site-margin-bottom-10">
+                <a href="/MusteriEkle" type="button" class="btn btn-lg btn-default btn-block">
+                    <span class="visible-xs-block visible-sm-block visible-md-block visible-lg-block">✔ Müşteri Ekle <span class="badge">4</span></span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="row" ng-cloak>
+        <div class="wizard">
+            <div class="wizard-inner">
+                <div class="connecting-line"></div>
+                <ul class="nav nav-tabs" role="tablist">
+
+                    <li role="presentation" class="active">
+                        <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-folder-open"></i>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li role="presentation" class="disabled">
+                        <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-pencil"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-picture"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Step 4">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-folder-open"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li role="presentation" class="disabled">
+                        <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab" title="Complete">
+                            <span class="round-tab">
+                                <i class="glyphicon glyphicon-ok"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <form role="form" id="frmIlan" name="frmIlan" novalidate>
+                <div class="tab-content">
+                    <!--Step One-->
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <h3>1. Aşama</h3>
+                        <p>Lütfen ilana ait bilgileri girinmiz.</p>
+                        <!--İlan Konum Seçenekleri Başladı-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">İlan Kategorisini Seçiniz</div>
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <div ng-repeat="kat in getKategoriler.result">
+                                        <div class="funkyradio">
+                                            <div class="col-md-12">
+                                                <div class="funkyradio-success">
+                                                    <input type="radio" name="radioBir" ng-click="ilanTuru()" ng-model="parameters.SatilikId" ng-required="!parameters.SatilikId" id="kat{{kat.id}}" value="{{kat.id}}" />
+                                                    <label for="kat{{kat.id}}">{{kat.kategoriAd}}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    @*<tt>Kategori id: {{parameters | json}}  {{id |json}}</tt><br />*@
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default" ng-show="getIlanTuru.result">
+                            <div class="panel-heading">İlan Türünü Seçiniz.</div>
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <div ng-repeat="tur in getIlanTuru.result">
+                                        <div class="funkyradio">
+                                            <div class="col-md-12">
+                                                <div class="funkyradio-success">
+                                                    <input type="radio" name="radioIki" ng-model="parameters.IlanTuru" id="tur{{tur.id}}" ng-required="!parameters.IlanTuru" value="{{tur.id}}" />
+                                                    <label for="tur{{tur.id}}">{{tur.kategoriAd}}</label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--İlan Konum Seçenekleri Bitti-->
+
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-primary next-step" ng-disabled="frmIlan.radioBir.$invalid ||frmIlan.radioIki.$invalid">Devam Et</button></li>
+                        </ul>
+                    </div>
+                    <!--Step One-->
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <h3>2. Aşama</h3>
+                        <p>Lütfen ilana ait bilgileri girinmiz.</p>
+                        <!--İlan Konum Seçenekleri Başladı-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">İlan Kategorisini Seçiniz</div>
+                            <div class="panel-body">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default" ng-show="getLocation.result">
+                                        <div class="panel-heading">İlçe Seçiniz.</div>
+                                        <div class="panel-body">
+                                            <div ng-repeat="location in getLocation.result">
+                                                <div class="funkyradio">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="radioUc" ng-click="clickSemt()" 
+                                                               ng-model="parameters.id" id="lok{{location.id}}" ng-required="!parameters.id" value="{{location.id}}" />
+                                                        <label for="lok{{location.id}}">{{location.locationName}}</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default" ng-show="getSemt.result">
+                                        <div class="panel-heading">Semt Seçiniz.</div>
+                                        <div class="panel-body">
+                                            <div ng-repeat="semt in getSemt.result">
+                                                <div class="funkyradio">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="radioDort" ng-click="clickMahalle()" ng-model="parameters.SemtId" id="sem{{semt.id}}" ng-required="!parameters.SemtId" value="{{semt.id}}" />
+                                                        <label for="sem{{semt.id}}">{{semt.locationName}}</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default" ng-show="getKategorilerMahalle.result">
+                                        <div class="panel-heading">Mahalle Seçiniz.</div>
+                                        <div class="panel-body">
+                                            <div ng-repeat="mahalle in getKategorilerMahalle.result">
+                                                <div class="funkyradio">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="radioBes" ng-model="parameters.MahalleId" id="mahalle{{mahalle.id}}" value="{{mahalle.id}}" ng-required="!parameters.MahalleId" />
+                                                        <label for="mahalle{{mahalle.id}}">{{mahalle.locationName}}</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-primary next-step" ng-disabled="frmIlan.radioUc.$invalid || frmIlan.radioDort.$invalid || frmIlan.radioBes.$invalid">Devam Et</button></li>
+                        </ul>
+                    </div>
+                    <!--Step Two-->
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <h3>3. Aşama</h3>
+                        <p>İlan özelliklerini giriniz.</p>
+                        <!--İlan Kimden-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">İlan Kimden</div>
+                            <div class="panel-body">
+
+                                <div class="col-md-12">
+                                    <div ng-repeat="kimden in emlakKimden.result">
+                                        <div class="funkyradio">
+                                            <div class="col-md-6">
+                                                <div class="funkyradio-success">
+                                                    <input type="radio" name="IlanKimden" ng-model="parameters.IlanKimden" id="kimden{{kimden.id}}" value="{{kimden.id}}" ng-required="!parameters.IlanKimden" />
+                                                    <label for="kimden{{kimden.id}}">{{kimden.kimden}}</label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Satıcı bilgileri-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">İletişim Bilgileri</div>
+                            <div class="panel-body">
+
+
+                                <div class="control-label col-md-12">
+                                    Sahibinin Adı
+                                </div>
+                                <div class="col-md-10">
+                                    <input class="form-control" ng-model="parameters.Sahibi" name="Sahibi" placeholder="Sahibinin adını yazınız."  type="text">
+                                </div>
+                                <div class="control-label col-md-12">
+                                    Sahibinin Cep Telefonu
+                                </div>
+                                <div class="col-md-10">
+                                    <input class="form-control" ng-model="parameters.CepTelefonu" name="CepTelefonu" placeholder="Sahibinin cep telefonunu yazınız."  type="text">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <!--İlan başlık alanı başladı-->
+                        <div class="panel panel-default">
+                            <div class="panel-heading">İlan Genel Bilgiler</div>
+                            <div class="panel-body">
+                                <div class="control-label col-md-12">
+                                    Başlık
+                                </div>
+                                <div class="col-md-10">
+                                    <input class="form-control" ng-model="parameters.Baslik" name="Baslik" placeholder="İlan Başlığı yazınız." required type="text">
+                                </div>
+                                <div class="col-md-2">
+                                    <div ng-show="frmIlan.$submitted || frmIlan.Baslik.$touched ||frmIlan.$dirty">
+                                        <span class="error fade in" ng-show="frmIlan.Baslik.$error.required">*</span>
+
+                                    </div>
+                                </div>
+                                <div class="control-label col-md-12">
+                                    Açıklama
+                                </div>
+                                <div class="col-md-10">
+                                    <textarea class="form-control" ng-model="parameters.Aciklama" name="Aciklama" placeholder="Açıklama yazınız."></textarea>
+                                </div>
+                                <div class="col-md-2"></div>
+                                <div class="control-label col-md-12">
+                                    Fiyat
+                                </div>
+                                <div class="col-md-10">
+                                    <input class="form-control" ng-model="parameters.Fiyat" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" name="Fiyat" placeholder="Fiyat yazınız." required type="number">
+                                    <div ng-show="frmIlan.$submitted || frmIlan.Fiyat.$touched ">
+                                        <span class="error fade in" ng-show="!frmIlan.Fiyat.$valid">
+                                            Para birimini hatalı girdiniz!
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div ng-show="frmIlan.$submitted || frmIlan.Fiyat.$touched ||frmIlan.$dirty">
+                                        <span class="error fade in" ng-show="frmIlan.Fiyat.$error.required">*</span>
+
+                                    </div>
+                                </div>
+                                <div class="control-label col-md-12">
+                                    MetreKare
+                                </div>
+                                <div class="col-md-10">
+                                    <input class="form-control" ng-model="parameters.Metrekare" name="Metrekare" placeholder="Metrekare yazınız."  type="text">
+
+                                </div>
+                                <div class="col-md-2">
+                                    @*<div ng-show="frmIlan.$submitted || frmIlan.Metrekare.$touched ||frmIlan.$dirty">
+                                        <span class="error fade in" ng-show="frmIlan.Metrekare.$error.required">*</span>
+
+                                    </div>*@
+                                </div>
+                                <div class="control-label col-md-12">
+                                    İletişim Telefonu
+                                </div>
+                                <div class="col-md-10">
+                                    <input class="form-control" ng-model="parameters.IletisimTelefonu" name="IletisimTelefonu" placeholder="Iletisim Telefonu yazınız." required type="text">
+
+                                </div>
+                                <div class="col-md-2">
+                                    <div ng-show="frmIlan.$submitted || frmIlan.IletisimTelefonu.$touched ||frmIlan.$dirty">
+                                        <span class="error fade in" ng-show="frmIlan.IletisimTelefonu.$error.required">*</span>
+
+                                    </div>
+                                </div>
+                                <div class="control-label col-md-12">
+                                    Görünüm Modu
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="funkyradio">
+                                        <div class="col-md-3">
+                                            <div class="funkyradio-success">
+                                                <input type="radio" name="private" ng-model="parameters.Private" id="public" value="Genel" ng-required="!parameters.Private" />
+                                                <label for="public">Genel</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="funkyradio-success">
+                                                <input type="radio" name="private" ng-model="parameters.Private" id="private" value="Özel" ng-required="!parameters.Private" />
+                                                <label for="private">Özel</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2"></div>
+                            </div>
+                        </div>
+
+                        <div ng-switch on="(parameters.SatilikId == 2) || (parameters.SatilikId == 4)" ng-cloak>
+                            <div ng-switch-when="true">
+                                <!-- Genel özellikler-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Takas Durumu.</div>
+                                    <div class="panel-body">
+                                        <div class="control-label col-md-12">
+                                            Takaslı mı?
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div ng-repeat="takas in emlakEmlakTakasli.result">
+                                                <div class="funkyradio">
+                                                    <div class="col-md-6">
+                                                        <div class="funkyradio-success">
+                                                            <input type="radio" name="TakasliID" ng-model="parameters.TakasliID" id="takasli{{takas.id}}" value="{{takas.id}}" ng-required="!parameters.TakasliID" />
+                                                            <label for="takasli{{takas.id}}">{{takas.takasli}}</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="control-label col-md-12">
+                                            Takas Türü
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input class="form-control" ng-model="parameters.TakasTuru" name="TakasTuru" placeholder="Takas türünü yazınız." type="text">
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div ng-switch on="(parameters.SatilikId == 2)" ng-cloak>
+                            <div ng-switch-when="true">
+                                <!--Tapu bilgileri-->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Tapu Bilgileri</div>
+                                    <div class="panel-body">
+                                        <div class="control-label col-md-12">
+                                            Pafta No
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input class="form-control" ng-model="parameters.Pafta" name="Pafta" placeholder="Pafta no yazınız."  type="text">
+                                        </div>
+                                        <div class="control-label col-md-12">
+                                            Parsel No
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input class="form-control" ng-model="parameters.Parsel" name="Parsel" placeholder="Parsel yazınız."  type="text">
+                                        </div>
+                                        <div class="control-label col-md-12">
+                                            Ada No
+                                        </div>
+                                        <div class="col-md-10">
+                                            <input class="form-control" ng-model="parameters.Ada" name="Ada" placeholder="Adı yazınız."  type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div ng-switch on="(parameters.IlanTuru == 5) || (parameters.IlanTuru == 11)" ng-cloak>
+                        <div ng-switch-when="true">
+                            <!--Emlak tipi  -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Konut Tipi</div>
+                                <div class="panel-body">
+                                    <div class="control-label col-md-12">
+
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div ng-repeat="kat in emlakKonutTipi.result">
+                                            <div class="funkyradio">
+                                                <div class="col-md-3">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="KonutTipi" ng-model="parameters.KonutTipi" id="konuttipi{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.KonutTipi" />
+                                                        <label for="konuttipi{{kat.id}}">{{kat.konutTipi}}</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Oda Sayısı başladı -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Oda Sayısı.</div>
+                                <div class="panel-body">
+                                    <div class="control-label col-md-12">
+                                        Oda Sayısı?
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div ng-repeat="kat in emlakOdaSayisi.result">
+                                            <div class="funkyradio">
+                                                <div class="col-md-3">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="OdaSayisi" ng-model="parameters.OdaSayisi" id="odasayisi{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.OdaSayisi" />
+                                                        <label for="odasayisi{{kat.id}}">{{kat.odaSayisi}}</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Bulunduğu kat başladı-->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Bulunduğu Kat.</div>
+                                <div class="panel-body">
+                                    <div class="control-label col-md-12">
+                                        Bulunduğu Kat?
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div ng-repeat="kat in emlakBulunduguKat.result">
+                                            <div class="funkyradio">
+                                                <div class="col-md-3">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="BulunduguKat" ng-model="parameters.BulunduguKat" id="bulundugukat{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.BulunduguKat" />
+                                                        <label for="bulundugukat{{kat.id}}">{{kat.bulunduguKat}}</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Isıtma şekli başladı -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Isıtma.</div>
+                                <div class="panel-body">
+                                    <div class="control-label col-md-12">
+                                        Isıtma Şekli?
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div ng-repeat="kat in emlakIsitmaSekli.result">
+                                            <div class="funkyradio">
+                                                <div class="col-md-3">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="Isitma" ng-model="parameters.Isitma" id="isitma{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.Isitma" />
+                                                        <label for="isitma{{kat.id}}">{{kat.isitma}}</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- iç özellikler alanı başladı -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">İç Özellikler</div>
+                                <div class="panel-body">
+                                    <div class="control-label col-md-12">
+
+                                    </div>
+                                    <div class="col-md-10">
+                                        <div class="funkyradio">
+
+
+                                            <div class="col-md-3" ng-repeat="kat in emlakIcOzellikler.result">
+                                                <div class="funkyradio-success">
+                                                    <input type="checkbox" name="selectedFruits[]" value="{{kat.id}}" ng-checked="selectionic.indexOf(kat.id) > -1" ng-click="toggleSelection(kat.id)" id="icozellikler{{kat.id}}" ng-required="!parameters.IcOzellikler" />
+                                                    <label for="icozellikler{{kat.id}}">{{kat.icOzellik}}</label>
+                                                </div>
+                                            </div>
+
+                                            @*<pre>{{selectionic|json}}  </pre>*@
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- Dış özellikler alanı başladı -->
+                            <div class="panel panel-default">
+                                <div class="panel-heading">Dış Özellikler</div>
+                                <div class="panel-body">
+                                    <div class="control-label col-md-12">
+
+                                    </div>
+                                    <div class="col-md-10">
+
+                                        <div class="funkyradio">
+                                            <div class="col-md-3" ng-repeat="kat in emlakDisOzellikler.result">
+                                                <div class="funkyradio-success">
+                                                    <input type="checkbox" name="selectedFruitss[]" ng-checked="selectiondis.indexOf(kat.id) > -1" id="disozellikler{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.DisOzelliker" ng-click="disSelection(kat.id)" />
+                                                    <label for="disozellikler{{kat.id}}">{{kat.disOzellik}}</label>
+                                                </div>
+                                            </div>
+                                            @*<pre>{{selectiondis|json}}  </pre>*@
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        @* İşyeri ilam *@
+                        <div ng-switch on="(parameters.IlanTuru == 13) || (parameters.IlanTuru == 6) || (parameters.IlanTuru == 19)" ng-cloak>
+                            <div ng-switch-when="true">
+                                <!-- Kullanım tipi başladı -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Kullanım Amacı</div>
+                                    <div class="panel-body">
+                                        <div class="control-label col-md-12">
+
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div ng-repeat="kat in emlakKullanimAmaci.result">
+                                                <div class="funkyradio">
+                                                    <div class="col-md-4">
+                                                        <div class="funkyradio-success">
+                                                            <input type="radio" name="kullanimamaci" ng-model="parameters.EmlakKullanimAmaci" id="kullanimamaci{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.EmlakKullanimAmaci" />
+                                                            <label for="kullanimamaci{{kat.id}}">{{kat.kullanimAmaci}}</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div> 
+
+                    @* İşyeri ilam *@
+                        <div ng-switch on="(parameters.IlanTuru == 6) || (parameters.IlanTuru == 19) || (parameters.IlanTuru == 13) || (parameters.IlanTuru == 12)" ng-cloak>
+                            <div ng-switch-when="true">
+                               
+                                <!-- Bulunduğu kat başladı -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Bulunduğu Kat.</div>
+                                    <div class="panel-body">
+                                        <div class="control-label col-md-12">
+                                            Bulunduğu Kat?
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div ng-repeat="kat in emlakBulunduguKat.result">
+                                                <div class="funkyradio">
+                                                    <div class="col-md-3">
+                                                        <div class="funkyradio-success">
+                                                            <input type="radio" name="BulunduguKat" ng-model="parameters.BulunduguKat" id="bulundugukat{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.BulunduguKat" />
+                                                            <label for="bulundugukat{{kat.id}}">{{kat.bulunduguKat}}</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Isıtma şekli başladı -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Isıtma.</div>
+                                    <div class="panel-body">
+                                        <div class="control-label col-md-12">
+                                            Isıtma Şekli?
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div ng-repeat="kat in emlakIsitmaSekli.result">
+                                                <div class="funkyradio">
+                                                    <div class="col-md-3">
+                                                        <div class="funkyradio-success">
+                                                            <input type="radio" name="Isitma" ng-model="parameters.Isitma" id="isitma{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.Isitma" />
+                                                            <label for="isitma{{kat.id}}">{{kat.isitma}}</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- iç özellikler alanı başladı -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">İç Özellikler</div>
+                                    <div class="panel-body">
+                                        <div class="control-label col-md-12">
+
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="funkyradio">
+
+
+                                                <div class="col-md-3" ng-repeat="kat in emlakIcOzellikler.result">
+                                                    <div class="funkyradio-success">
+                                                        <input type="checkbox" name="selectedFruits[]" value="{{kat.id}}" ng-checked="parameters.IcOzellikler.indexOf(kat.id) > -1" ng-click="toggleSelection(kat.id)" @*ng-model="parameters.IcOzellikler"*@ id="icozellikler{{kat.id}}" ng-required="!parameters.IcOzellikler" checked />
+                                                        <label for="icozellikler{{kat.id}}">{{kat.icOzellik}}</label>
+                                                    </div>
+                                                </div>
+
+                                                @*<pre>{{parameters.IcOzellikler|json}}  </pre>*@
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- Dış özellikler alanı başladı -->
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Dış Özellikler</div>
+                                    <div class="panel-body">
+                                        <div class="control-label col-md-12">
+
+                                        </div>
+                                        <div class="col-md-10">
+
+                                            <div class="funkyradio">
+                                                <div class="col-md-3" ng-repeat="kat in emlakDisOzellikler.result">
+                                                    <div class="funkyradio-success">
+                                                        <input type="checkbox" name="DisOzellikler[]" ng-checked="parameters.DisOzelliker.indexOf(kat.id) > -1" id="disozellikler{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.DisOzelliker" ng-click="disSelection(kat.id)" />
+                                                        <label for="disozellikler{{kat.id}}">{{kat.disOzellik}}</label>
+                                                    </div>
+                                                </div>
+                                                @*<pre>{{parameters.DisOzelliker|json}}  </pre>*@
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div ng-switch on="(parameters.IlanTuru == 7) || (parameters.IlanTuru == 8) || (parameters.IlanTuru == 9) || (parameters.IlanTuru == 10) ||  (parameters.IlanTuru == 14) || (parameters.IlanTuru == 15) || (parameters.IlanTuru == 16)" ng-cloak>
+                            <div ng-switch-when="true">
+
+                                <div class="panel panel-default" ng-show="emlakImarDurumu.result">
+                                    <div class="panel-heading">İmar Durumu.</div>
+                                    <div class="panel-body">
+                                        <div ng-repeat="kat in emlakImarDurumu.result">
+                                            <div class="funkyradio">
+                                                <div class="col-md-3">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="emlakdurumu" ng-model="parameters.EmlakImarDurumu" id="emlakdurumu{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.EmlakImarDurumu" />
+                                                        <label for="emlakdurumu{{kat.id}}">{{kat.emlakDurumu}}</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default" ng-show="emlakTapuDurumu.result">
+                                    <div class="panel-heading">Tapu Durumu.</div>
+                                    <div class="panel-body">
+                                        <div ng-repeat="kat in emlakTapuDurumu.result">
+                                            <div class="funkyradio">
+                                                <div class="col-md-6">
+                                                    <div class="funkyradio-success">
+                                                        <input type="radio" name="emlaktapudurumu" ng-model="parameters.EmlakTapuDurumu" id="emlaktapudurumu{{kat.id}}" value="{{kat.id}}" ng-required="!parameters.EmlakTapuDurumu" />
+                                                        <label for="emlaktapudurumu{{kat.id}}">{{kat.tapuDurumu}}</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                       
+                        <ul class="list-inline pull-right">
+                            
+                            <li><button type="button" class="btn btn-default prev-step">< Geri Dön</button></li>
+                            <li><button type="button" ng-click="emlakIlanSaves()" class="btn btn-primary next-step " ng-disabled="frmIlan.$invalid">İlanı Kaydet</button></li>
+                        </ul>
+                    </div>
+                    <!--step Three-->
+                    <div class="tab-pane" role="tabpanel" id="step4">
+                        <h3>Step 4</h3>
+                        <p>Resim Yükle</p>
+                        <span ng-show="emlakIlanBaslik===''" class="viewLoading">
+                            <img src="~/Content/Images/loading.gif" /> Lütfen bekleyiniz...
+                        </span>
+                        <div class="panel panel-default" ng-show="emlakIlanBaslik!==''">
+                            <div class="panel-heading">İlan Kategorisini Seçiniz</div>
+                            <div class="panel-body">
+                                <div ng-cloak>
+                                    <div class="col-md-12">
+                                        <div class="alert alert-success" role="alert">{{emlakIlanId}} {{emlakIlanBaslik}}</div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h4>Resim Yükle</h4>
+                                        <div class="input-group">
+                                            <label class="input-group-btn">
+                                                <span class="btn btn-primary">
+                                                    Resim Seçiniz...<input type="file" multiple my-directory="getFiles(file)" ng-disabled="uploading" style="display: none;" />
+
+                                                </span>
+                                            </label>
+                                            <input type="text" ng-model="countFiles" class="form-control" readonly>
+                                        </div>
+                                        <span class="help-block">
+                                            Lütfen yüklemek istediğiniz resimleri seçiniz...
+
+                                        </span>
+                                        <div class="input-group">
+                                            <input type="button" class="btn btn-default  btn-primary" value="Upload" ng-disabled="uploading || countFiles===''" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12" ng-show="countFiles!==''">
+                                        <h4>Yüklenecek Resimler</h4>
+                                        <div class="list-group">
+                                            <div ng-repeat="file in data ">
+                                                <a class="list-group-item list-group-item-success" href="#"><span class="alert alert-success pull-right" style="padding:0">{{file.FileLength}} Byte.</span>{{file.FileName}} </a>
+                                            </div>
+                                        </div>
+                                        <div ng-repeat="imgs in imagesrc">
+                                            <div class="col-md-3">
+                                                <img ng-src="{{imgs}}" class="img-rounded" thumbnail style="width:100%; border:1px solid #ccc; padding:1px">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li><button type="button" class="btn btn-default prev-step">< Geri Dön</button></li>
+                            <li><button type="button" class="btn btn-default next-step">Geç</button></li>
+                            <li><button type="button" class="btn btn-primary btn-info-full next-step" ng-click="uploadFiles()" ng-disabled="uploading || countFiles===''">Resimleri Yükle</button></li>
+                        </ul>
+                    </div>
+                    <!--step Four-->
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <span ng-show="emlakIlanResim ===''" class="viewLoading">
+                            <img src="~/Content/Images/loading.gif" /> Lütfen bekleyiniz...
+                        </span>
+                        <div ng-show="emlakIlanResim !==''">
+
+                            <p>İlanınız başarıyla yüklendi.</p>
+                            <div class="list-group">
+                                <a href="#" class="list-group-item active">
+                                    <h3>Tamamlandı</h3><span class="alert alert-success pull-right" style="padding:0">İlanınız başarıyla yüklendi.</span>
+                                </a>
+                                <a href="#" class="list-group-item">İlanı görüntüle!</a>
+                                <a href="#" class="list-group-item">İlanı sil!</a>
+                                <a href="#" class="list-group-item">Yeni ilan ekle!</a>
+                                <a href="#" class="list-group-item">Çıkış yap!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+             
+            </form>
+
+        </div>
+    </div>
+</div>

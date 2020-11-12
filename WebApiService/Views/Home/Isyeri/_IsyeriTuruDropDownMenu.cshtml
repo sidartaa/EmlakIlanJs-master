@@ -1,0 +1,10 @@
+﻿<a ng-show="IsyeriTipi" class="btn btn-default btn-select btn-select-light">
+    <input type="hidden" class="btn-select-input" id="" name="" value="" />
+    <span class="btn-select-value isyeri"> <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+ İşyeri Türünü Seçiniz</span>
+    <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+    <ul>
+        <li ng-repeat="kat in emlakKullanimAmaci.result" ng-model="parameters.EmlakKullanimAmaci" ng-click="clickIsyeriTipi(kat.id)" id="{{kat.id}}">{{kat.kullanimAmaci}}</li>
+
+    </ul>
+</a>

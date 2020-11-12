@@ -1,0 +1,37 @@
+﻿
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - 535 383 3310</title>
+    <meta name="description" content="İzmir torbalı ilçesinde emlak ilanları, satılık ve kiralık daire, konut, arsa, işyeri, dükkan, mağaza ve konut ilanlarını bulabileceğiniz torbalının en iyi emlak ilan sitesidir." />
+    @*@Styles.Render("~/Content/boots")*@
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/form")
+    @Styles.Render("~/Content/revolutionslider")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    @Html.Partial("_Header")
+    @Html.Partial("_Logo")
+    @Html.Partial("_Testere")
+    @*@Html.Partial("_KurumsalBasvuruFormu")*@
+    @*@Html.Partial("_Testere")*@
+    @RenderBody()
+    @*@Html.Partial("_Testere")
+        @Html.Partial("_KurumsalUyelerimiz")*@
+    @*@Html.Partial("_Testere")
+        @Html.Partial("_SliderIki")*@
+    @Html.Partial("_Testere")
+    @Html.Partial("_Footer")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/angular")
+    @Scripts.Render("~/bundles/revolutionsliderjs")
+    @Scripts.Render("~/bundles/Sitejs")
+    @RenderSection("scripts", required: false)
+    
+</body>
+</html>

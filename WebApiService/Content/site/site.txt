@@ -1,0 +1,2458 @@
+﻿<header id="header" class="header-container-wrapper">
+    <div class="topbar_wrap">
+        <div class="top-bar-wrapper">
+            <div class="container">
+                <a href="#" id="top-nav-mobile-a" class="top-nav-close">
+                    <span></span>
+                    Top Menu
+                </a>
+                <nav id="top-nav-mobile"></nav>
+                <nav id="top-nav-id" class="top-nav cocaMenu">
+                    <ul>
+                        <li class="current-menu-item">
+                            <a href="index-2.html">Home</a>
+                            <ul>
+                                <li><a href="index-2.html">Home Style 1</a></li>
+                                <li><a href="index2.html">Home Style 2</a></li>
+                                <li><a href="index3.html">Home Style 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                            <ul>
+                                <li><a href="#">Services 1</a></li>
+                                <li><a href="#">Services 2</a></li>
+                                <li><a href="#">Services 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                            <ul>
+                                <li><a href="#">Portfolio 1</a></li>
+                                <li>
+                                    <a href="#">Portfolio 2</a>
+                                    <ul>
+                                        <li><a href="#">Portfolio 1 Columns</a></li>
+                                        <li><a href="#">Portfolio 2 Columns</a></li>
+                                        <li><a href="#">Portfolio 3 Columns</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Portfolio 3</a></li>
+                                <li><a href="#">Portfolio 4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                        </li>
+                        <li><a href="shortcodes.html">Shortcodes</a></li>
+                        <li>
+                            <a href="#">pages</a>
+                            <ul>
+                                <li><a href="author.html">Author</a></li>
+                                <li><a href="column.html">Column</a></li>
+                                <li><a href="full-width.html">Full Width</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="left-sidebar.html">Left Sidebar</a></li>
+                                <li><a href="right-sidebar.html">Right Sidebar</a></li>
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="pricingtable.html">Pricing Table</a></li>
+                                <li><a href="review.html">Review</a></li>
+                                <li><a href="category.html">Category</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="header-outer-wrapper">
+        <div class="header-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="header-left left">
+                        <div class="logo-wrapper">
+                            <h1><a href="index-2.html"><img src="/Content/site/images/logo.png" alt="Universe"></a></h1>
+                        </div>
+                    </div>
+                    <div class="header-right right">
+                        <a href="#">
+                            <img src="http://placehold.it/480x80/f3f3f3/ffffff" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div><!-- END .header-wrapper -->
+    </div><!-- END .header-outer-wrapper -->
+    <div class="navbg">
+        <div class="primary-menu">
+            <div class="container">
+                <a class="mobile-menu-closed" href="#" id="mobile-menu-trigger">
+                    <i class="fa fa-bars"></i>
+                </a>
+                <!-- // Menu // -->
+                <ul class="sf-menu" id="menu">
+                    <li class="dropdown">
+                        <a class="sf-with-ul" href="#">
+                            <span>News</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">sport</a>
+                            </li>
+                            <li>
+                                <a href="#">Travel</a>
+                            </li>
+                            <li>
+                                <a href="#">Technology</a>
+                            </li>
+                            <li>
+                                <a href="#">Business</a>
+                            </li>
+                            <li>
+                                <a href="#">Media</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a class="sf-with-ul" href="#">
+                            <span>Tech</span>
+                        </a>
+                        <div class="sf-mega">
+                            <div class="sf-mega-section">
+                                <strong><a href="#">Entertaiment</a></strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Movies
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Gaming
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Music
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Sport
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end .sf-mega-section -->
+
+                            <div class="sf-mega-section">
+                                <strong><a href="#">Business</a></strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Marketing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Advertising
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Media
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Jobs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end .sf-mega-section -->
+
+                            <div class="sf-mega-section">
+                                <strong><a href="#">Social Media</a></strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Google
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Youtube
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end .sf-mega-section -->
+
+                            <div class="sf-mega-section">
+                                <strong><a href="#">Sport</a></strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Football
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            volleyball
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Golf
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            tennis
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end .sf-mega-section -->
+                        </div><!-- end .sf-mega -->
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Sport</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Business</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Health</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span>Entertaiment</span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="sf-with-ul" href="#">
+                            <span>Technology</span>
+                        </a>
+                        <ul>
+                            <li>
+                                <a href="#">sport</a>
+                            </li>
+                            <li>
+                                <a href="#">Travel</a>
+                            </li>
+                            <li>
+                                <a href="#">Technology</a>
+                            </li>
+                            <li>
+                                <a href="#">Business</a>
+                            </li>
+                            <li>
+                                <a href="#">Media</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                        <a class="sf-with-ul" href="#">
+                            <span>Videos</span>
+                        </a>
+                        <div class="sf-mega">
+                            <div class="sf-mega-section">
+                                <strong><a href="#">Entertaiment</a></strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Movies
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Gaming
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Music
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Sport
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end .sf-mega-section -->
+
+                            <div class="sf-mega-section">
+                                <strong><a href="#">Business</a></strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Marketing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Advertising
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Media
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Jobs
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end .sf-mega-section -->
+
+                            <div class="sf-mega-section">
+                                <strong><a href="#">Social Media</a></strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Facebook
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Twitter
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Google
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Youtube
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end .sf-mega-section -->
+
+                            <div class="sf-mega-section">
+                                <strong><a href="#">Sport</a></strong>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            Football
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            volleyball
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            Golf
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            tennis
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div><!-- end .sf-mega-section -->
+                        </div><!-- end .sf-mega -->
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</header>
+<div class="content-wrapper">
+    <div id="content" class="site-content">
+        <div class="container">
+            <div class="row row-wrapper">
+                <div class="row">
+                    <div class="eight columns">
+                        <div class="flex-container">
+                            <div class="flexslider">
+                                <ul class="slides">
+                                    <li>
+                                        <img alt="" src="/Content/site/images/data/2816239243_cfaea60e4e_o-620x350.jpg" />
+                                        <div class="flex-caption">
+                                            <header class="entry-header">
+                                                <h2 class="entry-title">
+                                                    <a href="#">
+                                                        Lorem ipsum dolor sit amet, consectetur
+                                                    </a>
+                                                </h2>
+                                            </header>
+                                            <div class="entry-summary">
+                                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                Excepteur sint occaecat cupidatat non proident...
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <img alt="" src="/Content/site/images/data/2820214199_dd42f9e7b6_o-620x350.jpg" />
+                                        <div class="flex-caption">
+                                            <header class="entry-header">
+                                                <h2 class="entry-title">
+                                                    <a href="#">
+                                                        Lorem ipsum dolor sit amet, consectetur
+                                                    </a>
+                                                </h2>
+                                            </header>
+                                            <div class="entry-summary">
+                                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                                Excepteur sint occaecat cupidatat non proident...
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="four columns top-widget">
+                        <aside id="trending" class="widget widget_trending">
+                            <h3 class="widget-title"><span>Trending news</span></h3>
+                            <div class="widget-container">
+                                <div class="customNavigation">
+                                    <a class="trenprev prev"></a>
+                                    <a class="trennext next"></a>
+                                </div>
+                                <div id="tren" class="owl-carousel">
+                                    <div class="item">
+                                        <div class="list-post">
+                                            <article class="item-post post bgblack" id="post1">
+                                                <div class="featured-image">
+                                                    <img alt="" src="/Content/site/images/data/5531974031_ac7728bf27_b-120x85.jpg" />
+                                                    <a href="post.html">
+                                                        <div class="featured-image-control bgred">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a rel="bookmark" href="post.html">
+                                                            Ut enim ad minim veniam quis nostrud exercitation ullamcos laboris nisi ut aliquip ex...
+                                                        </a>
+                                                    </h3>
+                                                </header>
+                                            </article>
+                                            <article class="item-post post bgblack" id="post2">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/bigstock-fashionable-girl-with-shopping-12158207-120x85.jpg" />
+                                                        <div class="featured-image-control bgred">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a rel="bookmark" href="post.html">
+                                                            Ut enim ad minim veniam quis nostrud exercitation ullamcos laboris nisi ut aliquip ex...
+                                                        </a>
+                                                    </h3>
+                                                </header>
+                                            </article>
+                                            <article class="item-post post bgblack" id="post3">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/6982414194_2ba108faf2_o-120x85.jpg" />
+                                                        <div class="featured-image-control bgred">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a rel="bookmark" href="post.html">
+                                                            Ut enim ad minim veniam quis nostrud exercitation ullamcos laboris nisi ut aliquip ex...
+                                                        </a>
+                                                    </h3>
+                                                </header>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="list-post">
+                                            <article class="item-post post bgblack" id="post4">
+                                                <div class="featured-image">
+                                                    <img alt="" src="/Content/site/images/data/technology-3-120x85.jpg" />
+                                                    <a href="post.html">
+                                                        <div class="featured-image-control bgred">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a rel="bookmark" href="post.html">
+                                                            Ut enim ad minim veniam quis nostrud exercitation ullamcos laboris nisi ut aliquip ex...
+                                                        </a>
+                                                    </h3>
+                                                </header>
+                                            </article>
+                                            <article class="item-post post bgblack" id="post5">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/13976378039_f5985157a6_o-120x85.jpg" />
+                                                        <div class="featured-image-control bgred">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a rel="bookmark" href="post.html">
+                                                            Ut enim ad minim veniam quis nostrud exercitation ullamcos laboris nisi ut aliquip ex...
+                                                        </a>
+                                                    </h3>
+                                                </header>
+                                            </article>
+                                            <article class="item-post post bgblack b0" id="post6">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/6985853660_dd97f3b2e3_o-120x85.jpg" />
+                                                        <div class="featured-image-control bgred">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a rel="bookmark" href="post.html">
+                                                            Ut enim ad minim veniam quis nostrud exercitation ullamcos laboris nisi ut aliquip ex...
+                                                        </a>
+                                                    </h3>
+                                                </header>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="primary" class="content-area eight columns">
+                        <section class="recent">
+                            <div class="block-head">
+                                <h3><span>Recent Posts</span></h3>
+                            </div>
+                            <div class="customNavigation">
+                                <a class="receprev prev"></a>
+                                <a class="recenext next"></a>
+                            </div>
+                            <div id="rece" class="owl-carousel">
+                                <div class="item">
+                                    <div class="list-post">
+                                        <article class="item-post post" id="post7">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/5531974031_ac7728bf27_b-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                        <article class="item-post post" id="post8">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/technology-3-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="list-post">
+                                        <article class="item-post post" id="post9">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/bigstock-fashionable-girl-with-shopping-12158207-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                        <article class="item-post post" id="post10">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/6985853426_fb21090d5f_o-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="list-post">
+                                        <article class="item-post post" id="post11">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/2086641598_09417a3feb_b-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                        <article class="item-post post" id="post12">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/11220929004_ad47ba9ab6_k-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="photography">
+                            <div class="block-head">
+                                <h3><span>Photography</span></h3>
+                            </div>
+                            <div class="customNavigation">
+                                <a class="photprev prev"></a>
+                                <a class="photnext next"></a>
+                            </div>
+                            <div id="phot" class="owl-carousel row">
+                                <div class="item">
+                                    <article class="item-post post" id="post13">
+                                        <div class="six columns b0">
+                                            <div class="featured-image larger">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/5461276006_e37e0402d7_o-420x270.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="six columns b0">
+                                            <header class="entry-header">
+                                                <h3 class="entry-title ">
+                                                    <a href="post.html">Consectetur adipisicing elit sed</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                            <div class="entry-excerpt">
+                                                Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post14">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/3209135882_097f3da854_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post15">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/1741009169_80b2a9c033_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post16">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2150289698_c8c81a4d2d_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post17">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2376000829_ecb9c4efc1_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <article class="item-post post" id="post18">
+                                        <div class="six columns b0">
+                                            <div class="featured-image larger">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/4040479523_ffa87feb54_b-420x270.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="six columns b0">
+                                            <header class="entry-header">
+                                                <h3 class="entry-title ">
+                                                    <a href="post.html">Consectetur adipisicing elit sed</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                            <div class="entry-excerpt">
+                                                Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post19">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2150289698_c8c81a4d2d_b1-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post20">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2137100893_fb68b993ca_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post21">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2824381790_83223314f5_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post22">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2459724341_93d1bebdd1_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="travel">
+                            <div class="block-head">
+                                <h3><span>Travel</span></h3>
+                            </div>
+                            <div class="customNavigation">
+                                <a class="travprev prev"></a>
+                                <a class="travnext next"></a>
+                            </div>
+                            <div id="trav" class="owl-carousel row">
+                                <div class="item">
+                                    <div class="six columns b0">
+                                        <article class="item-post post b0" id="post23">
+                                            <div class="featured-image larger">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/4040479523_ffa87feb54_b-420x270.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Quis nostrud exercitation</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                            <div class="entry-excerpt">
+                                                Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post24">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2307232350_41febabf7a_z-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post25">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2334348892_99f43d8e54_z-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post26">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2433403926_3af721c37c_z-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post27">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/3209135882_097f3da854_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="six columns b0">
+                                        <article class="item-post post b0" id="post28">
+                                            <div class="featured-image larger">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/2816239243_cfaea60e4e_o-420x270.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Quis nostrud exercitation</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                            <div class="entry-excerpt">
+                                                Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                                            </div>
+                                        </article>
+                                    </div>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post29">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/14528969809_df01466c0b_z-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post30">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/14769250262_a727bc5984_z-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post31">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/3209135882_097f3da854_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post32">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2433403926_3af721c37c_z-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="technology">
+                            <div class="block-head">
+                                <h3><span>Technology</span></h3>
+                            </div>
+                            <div class="customNavigation">
+                                <a class="techprev prev"></a>
+                                <a class="technext next"></a>
+                            </div>
+                            <div id="tech" class="owl-carousel row">
+                                <div class="item">
+                                    <article class="item-post post" id="post33">
+                                        <div class="six columns b0">
+                                            <div class="featured-image larger">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/6985853660_dd97f3b2e3_o-420x270.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="six columns b0">
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Quis nostrud exercitation ullamco</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                            <div class="entry-excerpt">
+                                                Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post34">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/13976378039_f5985157a6_o-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post35">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/8099859896_7026387209_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post36">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/7131937261_3df80b03d2_o-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post37">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2150289698_c8c81a4d2d_b1-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <article class="item-post post" id="post38">
+                                        <div class="six columns b0">
+                                            <div class="featured-image larger">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/4333795819_2a483b73d9_b-420x270.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="six columns b0">
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Quis nostrud exercitation ullamco</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                            <div class="entry-excerpt">
+                                                Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                        </div>
+                                    </article>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post39">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/2086641598_09417a3feb_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post40">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/3209135882_097f3da854_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="six columns b0">
+                                        <div class="list-post">
+                                            <article class="item-post post" id="post41">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/6982414194_2ba108faf2_o-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                            <article class="item-post post" id="post42">
+                                                <div class="featured-image">
+                                                    <a href="post.html">
+                                                        <img alt="" src="/Content/site/images/data/4333795819_2a483b73d9_b-80x60.jpg" />
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <header class="entry-header">
+                                                    <h3 class="entry-title">
+                                                        <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                    </h3>
+                                                </header>
+                                                <div class="entry-meta">
+                                                    <span class="entry-date">
+                                                        <a href="#">
+                                                            November 30, 2014 -
+                                                        </a>
+                                                    </span>
+                                                    <span class="comments-link">
+                                                        <a href="#">25 comments </a>
+                                                    </span>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="gallery">
+                            <div class="block-head">
+                                <h3><span>Gallery</span></h3>
+                            </div>
+                            <div class="customNavigation">
+                                <a class="gallprev prev"></a>
+                                <a class="gallnext next"></a>
+                            </div>
+                            <div id="gall" class="owl-carousel row popup-gallery">
+                                <div class="item">
+                                    <div class="img-thumb">
+                                        <a href="/Content/site/images/data/4040479523_ffa87feb54_b-420x270.jpg" title="gallery">
+                                            <img alt="" src="/Content/site/images/data/4040479523_ffa87feb54_b1-153x97.jpg" />
+                                            <div class="featured-image-control">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-thumb">
+                                        <a href="/Content/site/images/data/3209135882_097f3da854_b.jpg" title="gallery">
+                                            <img alt="" src="/Content/site/images/data/3209135882_097f3da854_b-153x97.jpg" />
+                                            <div class="featured-image-control">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-thumb">
+                                        <a href="/Content/site/images/data/2409004497_cce0216af4_b.jpg" title="gallery">
+                                            <img alt="" src="/Content/site/images/data/2409004497_cce0216af4_b-153x97.jpg" />
+                                            <div class="featured-image-control">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-thumb">
+                                        <a href="/Content/site/images/data/2459724341_93d1bebdd1_b.jpg" title="gallery">
+                                            <img alt="" src="/Content/site/images/data/2459724341_93d1bebdd1_b-153x97.jpg" />
+                                            <div class="featured-image-control">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="img-thumb">
+                                        <a href="/Content/site/images/data/2376000829_ecb9c4efc1_b.jpg" title="gallery">
+                                            <img alt="" src="/Content/site/images/data/2376000829_ecb9c4efc1_b-153x97.jpg" />
+                                            <div class="featured-image-control">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="business">
+                            <div class="block-head">
+                                <h3><span>Business</span></h3>
+                            </div>
+                            <div class="customNavigation">
+                                <a class="busiprev prev"></a>
+                                <a class="businext next"></a>
+                            </div>
+                            <div id="busi" class="owl-carousel row">
+                                <div class="item twelve columns b0">
+                                    <article class="item-post post" id="post43">
+                                        <div class="featured-image larger">
+                                            <a href="post.html">
+                                                <img alt="" src="/Content/site/images/data/11220931254_e62e1593ba_k-420x270.jpg" />
+                                                <div class="featured-image-control">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <header class="entry-header">
+                                            <h3 class="entry-title">
+                                                <a href="post.html">Quis nostrud exercitation</a>
+                                            </h3>
+                                        </header>
+                                        <div class="entry-meta">
+                                            <span class="entry-date">
+                                                <a href="#">
+                                                    November 30, 2014 -
+                                                </a>
+                                            </span>
+                                            <span class="comments-link">
+                                                <a href="#">25 comments </a>
+                                            </span>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </div>
+                                    </article>
+                                    <div class="list-post">
+                                        <article class="item-post post" id="post44">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/11220929004_ad47ba9ab6_k-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                        <article class="item-post post" id="post45">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/8099859896_7026387209_b-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="item twelve columns b0">
+                                    <article class="item-post post" id="post46">
+                                        <div class="featured-image larger">
+                                            <a href="post.html">
+                                                <img alt="" src="/Content/site/images/data/13976378039_f5985157a6_o-420x270.jpg" />
+                                                <div class="featured-image-control">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <header class="entry-header">
+                                            <h3 class="entry-title">
+                                                <a href="post.html">Quis nostrud exercitation</a>
+                                            </h3>
+                                        </header>
+                                        <div class="entry-meta">
+                                            <span class="entry-date">
+                                                <a href="#">
+                                                    November 30, 2014 -
+                                                </a>
+                                            </span>
+                                            <span class="comments-link">
+                                                <a href="#">25 comments </a>
+                                            </span>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </div>
+                                    </article>
+                                    <div class="list-post">
+                                        <article class="item-post post" id="post47">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/6982414194_2ba108faf2_o-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                        <article class="item-post post" id="post48">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/6985853660_dd97f3b2e3_o-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="item twelve columns b0">
+                                    <article class="item-post post" id="post49">
+                                        <div class="featured-image larger">
+                                            <a href="post.html">
+                                                <img alt="" src="/Content/site/images/data/13712347603_1497ef409d_o-420x270.jpg" />
+                                                <div class="featured-image-control">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <header class="entry-header">
+                                            <h3 class="entry-title">
+                                                <a href="post.html">Consectetur adipisicing elit sed</a>
+                                            </h3>
+                                        </header>
+                                        <div class="entry-meta">
+                                            <span class="entry-date">
+                                                <a href="#">
+                                                    November 30, 2014 -
+                                                </a>
+                                            </span>
+                                            <span class="comments-link">
+                                                <a href="#">25 comments </a>
+                                            </span>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </div>
+                                    </article>
+                                    <div class="list-post">
+                                        <article class="item-post post" id="post50">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/7131937261_3df80b03d2_o-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                        <article class="item-post post" id="post51">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/13976378039_f5985157a6_o-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                                <div class="item twelve columns b0">
+                                    <article class="item-post post" id="post52">
+                                        <div class="featured-image larger">
+                                            <a href="post.html">
+                                                <img alt="" src="/Content/site/images/data/11220931254_e62e1593ba_k-420x270.jpg" />
+                                                <div class="featured-image-control">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <header class="entry-header">
+                                            <h3 class="entry-title">
+                                                <a href="post.html">Quis nostrud exercitation</a>
+                                            </h3>
+                                        </header>
+                                        <div class="entry-meta">
+                                            <span class="entry-date">
+                                                <a href="#">
+                                                    November 30, 2014 -
+                                                </a>
+                                            </span>
+                                            <span class="comments-link">
+                                                <a href="#">25 comments </a>
+                                            </span>
+                                        </div>
+                                        <div class="entry-excerpt">
+                                            Consectetur adipisicing elit, sed do eiusmod tempor inci didunt ut labore et dolore magna aliqua. Ut enim ad mini veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        </div>
+                                    </article>
+                                    <div class="list-post">
+                                        <article class="item-post post" id="post53">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/11220929004_ad47ba9ab6_k-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                        <article class="item-post post" id="54">
+                                            <div class="featured-image">
+                                                <a href="post.html">
+                                                    <img alt="" src="/Content/site/images/data/8099859896_7026387209_b-80x60.jpg" />
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014 -
+                                                    </a>
+                                                </span>
+                                                <span class="comments-link">
+                                                    <a href="#">25 comments </a>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div><!-- #primary -->
+                    <div id="secondary" class="widget-area four columns" role="complementary">
+                        <aside id="search" class="widget widget_search">
+                            <div class="widget-container">
+                                <form action="index.html" class="search-form" method="get" role="search">
+                                    <div class="form-line">
+                                        <i class="fa fa-search"></i>
+                                        <input type="search" title="Search" name="s" value="" placeholder="Search..." class="search-field">
+                                        <input type="submit" value="Go!" class="search-submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </aside>
+                        <aside id="member" class="widget widget_member">
+                            <h3 class="widget-title"><span>Member Area</span></h3>
+                            <div class="widget-container">
+                                <form method="post" action="index.html" id="loginform" name="loginform">
+                                    <div class="form-line">
+                                        <i class="fa fa-user"></i>
+                                        <input type="text" size="20" value="" placeholder="USERNAME" class="input" id="user_login" name="log">
+                                    </div>
+                                    <div class="form-line">
+                                        <i class="fa fa-lock"></i>
+                                        <input type="password" size="20" value="" placeholder="PASSWORD" class="input" id="user_pass" name="pwd">
+                                    </div>
+                                    <input type="submit" value="Login" id="member-login" class="btn">
+                                </form>
+                            </div>
+                        </aside>
+                        <aside id="subscribe" class="widget widget_subscribe">
+                            <h3 class="widget-title"><span>Subscribe</span></h3>
+                            <div class="widget-container">
+                                <div class="block_subscribes">
+                                    <div class="service">
+                                        <a class="rss" href="#">
+                                            <span class="num">143826</span>
+                                            <span class="people">Subscribers</span>
+                                        </a>
+                                    </div>
+                                    <div class="service">
+                                        <a class="tw" href="#">
+                                            <span id="followers_count" class="num">95</span>
+                                            <span class="people">Followers</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside id="tabbed-widget" class="widget widget_tabs">
+                            <h3 class="widget-title"><span>Popular</span></h3>
+                            <div class="widget-container">
+                                <div class="tabs-top">
+                                    <ul class="tabs posts-taps">
+                                        <li class="tabs"><a href="#tab1">Popular</a></li>
+                                        <li class="tabs"><a href="#tab2">Recent</a></li>
+                                        <li class="tabs"><a href="#tab3">Comments</a></li>
+                                        <li class="tabs"><a href="#tab4">Tags</a></li>
+                                    </ul>
+                                </div>
+                                <div class="tabs-content">
+                                    <div id="tab1" class="tabs-wrap">
+                                        <ul class="list-post">
+                                            <li>
+                                                <article class="item-post post" id="post61">
+                                                    <div class="featured-image">
+                                                        <img alt="" src="/Content/site/images/data/13976378039_f5985157a6_o-50x50.jpg">
+                                                        <a href="post.html">
+                                                            <div class="featured-image-control">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <header class="entry-header">
+                                                        <h3 class="entry-title">
+                                                            <a href="post.html">Excepteur sint occaecat cupidatat non proident</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="entry-meta">
+                                                        <span class="entry-date">
+                                                            <a href="#">
+                                                                November 30, 2014
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="item-post post" id="post62">
+                                                    <div class="featured-image">
+                                                        <img alt="" src="/Content/site/images/data/11220929004_ad47ba9ab6_k-50x50.jpg">
+                                                        <a href="post.html">
+                                                            <div class="featured-image-control">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <header class="entry-header">
+                                                        <h3 class="entry-title">
+                                                            <a href="post.html">Duis aute irure dolor in reprehenderit in voluptate velit esse</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="entry-meta">
+                                                        <span class="entry-date">
+                                                            <a href="#">
+                                                                November 30, 2014
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="item-post post" id="post63">
+                                                    <div class="featured-image">
+                                                        <img alt="" src="/Content/site/images/data/bigstock-fashionable-girl-with-shopping-12158207-50x50.jpg">
+                                                        <a href="post.html">
+                                                            <div class="featured-image-control">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <header class="entry-header">
+                                                        <h3 class="entry-title">
+                                                            <a href="post.html">Utenim ad minim veniam, quis nostrud exercitation ullamco laboris</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="entry-meta">
+                                                        <span class="entry-date">
+                                                            <a href="#">
+                                                                November 30, 2014
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="tab2" class="tabs-wrap">
+                                        <ul class="list-post">
+                                            <li>
+                                                <article class="item-post post" id="post64">
+                                                    <div class="featured-image">
+                                                        <img alt="" src="/Content/site/images/data/5461276006_e37e0402d7_o-50x50.jpg">
+                                                        <a href="post.html">
+                                                            <div class="featured-image-control">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <header class="entry-header">
+                                                        <h3 class="entry-title">
+                                                            <a href="post.html">Consectetur adipisicing elit sed do eiusmod tempor incididunt ut.</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="entry-meta">
+                                                        <span class="entry-date">
+                                                            <a href="#">
+                                                                November 30, 2014
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="item-post post" id="post65">
+                                                    <div class="featured-image">
+                                                        <img alt="" src="/Content/site/images/data/319279750_2b80919044_o-50x50.jpg">
+                                                        <a href="post.html">
+                                                            <div class="featured-image-control">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <header class="entry-header">
+                                                        <h3 class="entry-title">
+                                                            <a href="post.html">Eodem modo typi, qui nunc nobis videntur parum clari</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="entry-meta">
+                                                        <span class="entry-date">
+                                                            <a href="#">
+                                                                November 30, 2014
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="item-post post" id="post66">
+                                                    <div class="featured-image">
+                                                        <img alt="" src="/Content/site/images/data/6982414194_2ba108faf2_o-50x50.jpg">
+                                                        <a href="post.html">
+                                                            <div class="featured-image-control">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <header class="entry-header">
+                                                        <h3 class="entry-title">
+                                                            <a href="post.html">Claritas est etiam processus dynamicus, qui sequitur</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="entry-meta">
+                                                        <span class="entry-date">
+                                                            <a href="#">
+                                                                November 30, 2014
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                            <li>
+                                                <article class="item-post post" id="post67">
+                                                    <div class="featured-image">
+                                                        <img alt="" src="/Content/site/images/data/6985853660_dd97f3b2e3_o-50x50.jpg">
+                                                        <a href="post.html">
+                                                            <div class="featured-image-control">
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <header class="entry-header">
+                                                        <h3 class="entry-title">
+                                                            <a href="post.html">Duis autem vel eum iriure dolor in hendrerit in vulputate</a>
+                                                        </h3>
+                                                    </header>
+                                                    <div class="entry-meta">
+                                                        <span class="entry-date">
+                                                            <a href="#">
+                                                                November 30, 2014
+                                                            </a>
+                                                        </span>
+                                                    </div>
+                                                </article>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="tab3" class="tabs-wrap">
+                                        <ul>
+                                            <li>
+                                                <div class="featured-image">
+                                                    <img src="/Content/site/images/data/11220929004_ad47ba9ab6_k-50x50.jpg" alt="">
+                                                    <a href="#">
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="#">Anrin: Good Theme... </a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="featured-image">
+                                                    <img src="/Content/site/images/data/11220929004_ad47ba9ab6_k-50x50.jpg" alt="">
+                                                    <a href="#">
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="#">Mido Ghranek: I proud of foad and Sahifa template as my pride of Pharaonic...</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="featured-image">
+                                                    <img src="/Content/site/images/data/11220929004_ad47ba9ab6_k-50x50.jpg" alt="">
+                                                    <a href="#">
+                                                        <div class="featured-image-control">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="content">
+                                                    <a href="#">Sagar: Nice Theme...</a>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div id="tab4" class="tabs-wrap tagcloud">
+                                        <a title="6 topics" class="tag-link-10" href="#">elementum</a>
+                                        <a title="3 topics" class="tag-link-11" href="#">Maecenas</a>
+                                        <a title="3 topics" class="tag-link-9" href="#">Vivamus</a>
+                                        <a title="2 topics" class="tag-link-12" href="#">posuere</a>
+                                        <a title="2 topics" class="tag-link-13" href="#">Tempor</a>
+                                        <a title="1 topic" class="tag-link-14" href="#">aliquam</a>
+                                        <a title="1 topic" class="tag-link-15" href="#">nam</a>
+                                        <a title="1 topic" class="tag-link-19" href="#">tantas</a>
+                                        <a title="1 topic" class="tag-link-18" href="#">interpretaris</a>
+                                        <a title="1 topic" class="tag-link-17" href="#">mea</a>
+                                        <a title="1 topic" class="tag-link-16" href="#">reprehendunt</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </aside>
+                        <aside id="recenttweet" class="widget widget_recenttweet">
+                            <h3 class="widget-title"><span>Recent Tweet</span></h3>
+                            <div class="widget-container">
+                                <ul class="tweet">
+                                    <li>
+                                        <i class="fa fa-quote-left"></i>
+                                        <p>
+                                            Get the News on Today's Apple Event from AppStorm
+                                            <a href="#">http://envato.com...</a>
+                                        </p>
+                                        <span class="time">
+                                            <a href="#">
+                                                about 15 hours ago
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-quote-left"></i>
+                                        <p>
+
+                                            congratulations! Look forward to seeing more.
+                                        </p>
+                                        <span class="time">
+                                            <a href="#">
+                                                about 15 hours ago
+                                            </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <i class="fa fa-quote-left"></i>
+                                        <p>
+                                            How Does the Marketplace Affiliate Program Work?
+                                            <a href="#">http://enva.to/RCDST...</a>
+                                        </p>
+                                        <span class="time">
+                                            <a href="#">
+                                                about 15 hours ago
+                                            </a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside id="topreviews" class="widget widget_topreviews">
+                            <h3 class="widget-title"><span>Top Reviews</span></h3>
+                            <div class="widget-container">
+                                <ul class="reviews list-post">
+                                    <li>
+                                        <article class="item-post post" id="post611">
+                                            <div class="featured-image">
+                                                <img alt="" src="/Content/site/images/data/6985853660_dd97f3b2e3_o-50x50.jpg">
+                                                <a href="post.html">
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Lorem ipsum dolor sit amet, consectetuer</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014
+                                                    </a>
+                                                </span>
+                                                <span class="stars-small" title="Great!">
+                                                    <span style="width: 80%;"></span>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="item-post post" id="post">
+                                            <div class="featured-image">
+                                                <img alt="" src="/Content/site/images/data/3617772958_0db68e3d6c_b-50x50.jpg">
+                                                <a href="post.html">
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Eodem modo typi, qui nunc nobis videntur</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014
+                                                    </a>
+                                                </span>
+                                                <span class="stars-small" title="Great!">
+                                                    <span style="width: 60%;"></span>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </li>
+                                    <li>
+                                        <article class="item-post post" id="post612">
+                                            <div class="featured-image">
+                                                <img alt="" src="/Content/site/images/data/319279750_2b80919044_o-50x50.jpg">
+                                                <a href="post.html">
+                                                    <div class="featured-image-control">
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <header class="entry-header">
+                                                <h3 class="entry-title">
+                                                    <a href="post.html">Typi non habent claritatem insitam est</a>
+                                                </h3>
+                                            </header>
+                                            <div class="entry-meta">
+                                                <span class="entry-date">
+                                                    <a href="#">
+                                                        November 30, 2014
+                                                    </a>
+                                                </span>
+                                                <span class="stars-small" title="Great!">
+                                                    <span style="width: 50%;"></span>
+                                                </span>
+                                            </div>
+                                        </article>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside id="accordion" class="widget widget_accordion">
+                            <h3 class="widget-title"><span>Accordion</span></h3>
+                            <div class="widget-container">
+                                <ul class="accordion">
+                                    <li>
+                                        <h4 class="accordion-title"><span class="accordion-icon"></span>Accordion 1</h4>
+                                        <div class="accordion-content">Lorem ipsum dolor it amet, consec tetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et do lore magna aliqua.</div>
+                                    </li>
+                                    <li>
+                                        <h4 class="accordion-title"><span class="accordion-icon"></span>Accordion 2 </h4>
+                                        <div class="accordion-content">Lorem ipsum dolor it amet, consec tetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et do lore magna aliqua.</div>
+                                    </li>
+                                    <li>
+                                        <h4 class="accordion-title"><span class="accordion-icon"></span>Accordion 3</h4>
+                                        <div class="accordion-content">Lorem ipsum dolor it amet, consec tetur adipisicing elit, sed do eiusmo tempor incididunt ut labore et do lore magna aliqua.</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </aside>
+                        <aside id="featuredvideo" class="widget widget_featuredvideo">
+                            <h3 class="widget-title"><span>Featured Video</span></h3>
+                            <div class="widget-container">
+                                <iframe src="http://player.vimeo.com/video/51551241?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="500" height="281"></iframe>
+                            </div>
+                        </aside>
+                        <aside id="photostream" class="widget widget_photostream">
+                            <h3 class="widget-title"><span>Photo Stream</span></h3>
+                            <div class="widget-container">
+                                <div class="text-center popup-photo row">
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/13712347043_b95bf477de_o-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/11220931254_e62e1593ba_k-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/11220929004_ad47ba9ab6_k-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/5461276006_e37e0402d7_o-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/4379977619_4ebbf93b8e_o-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/3682018801_9a03f1b355_b-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/4024367731_0e5c050ccf_b-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/3642590863_d0ce95912b_b-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/2824381790_83223314f5_b-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/3209135882_097f3da854_b-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/2086641598_09417a3feb_b-60x60.jpg">
+                                    </a>
+                                    <a href="#" title="gallery">
+                                        <img alt="" class="photo" src="/Content/site/images/data/13712347043_b95bf477de_o-60x60.jpg">
+                                    </a>
+                                </div>
+                            </div>
+                        </aside>
+                    </div><!-- #secondary -->
+                </div><!--.row -->
+            </div><!--.row-wrapper -->
+        </div><!-- .container -->
+    </div><!-- #content -->
+</div>
+<footer id="footer" class="site-footer" role="contentinfo">
+    <div class="footer-copyright-wrapper">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="copy-left left">
+                    &copy; 2014 Universe. All Rights Reserved.
+                </div>
+                <div class="copy-social right">
+                    <ul class="footer-social">
+                        <li class="social-twitter"><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="social-facebook"><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="social-linkedin"><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        <li class="social-rss"><a href="#" target="_blank"><i class="fa fa-rss"></i></a></li>
+                        <li class="social-vine"><a href="#" target="_blank"><i class="fa fa-vine"></i></a></li>
+                        <li class="social-dribbble"><a href="#" target="_blank"><i class="fa fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

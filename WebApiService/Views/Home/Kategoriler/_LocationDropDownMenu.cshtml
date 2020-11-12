@@ -1,0 +1,11 @@
+﻿<a class="btn btn-default btn-select btn-select-light">
+    <input ng-model="parameters.SemtId" type="hidden" class="btn btn-select-input" id="" name="" value="" />
+    <span class="btn btn-select-value location"><i class='fa fa-hand-pointer-o' aria-hidden='true'></i> İlan Semtini Seçiniz</span>
+    <span class='btn btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+    <ul>
+        <li ng-repeat="kat in getSemt.result" ng-model="parameters.SemtId" ng-click="clickLock(kat.id)" id="kat{{kat.id}}">
+           {{kat.locationName}}
+        </li>
+    </ul>
+</a>
+

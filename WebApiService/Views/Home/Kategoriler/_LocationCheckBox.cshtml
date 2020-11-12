@@ -1,0 +1,15 @@
+﻿<ul class="list-group" ng-show="getKategorilerSemt.result">
+    <li class="list-group-item fontsize-14"> Semt Seçiniz</li>
+    <li class="list-group-item" ng-repeat="kat in getKategorilerSemt.result" ng-cloak>
+        <div class="funkyradio">
+            <div class="funkyradio-success" @*style="opacity:1; float:left;  width:30%;"*@>
+                <input type="radio" name="radioUc" id="kat{{kat.id}}" ng-model="parametersearch.SemtId" value="{{kat.id}}" />
+                <label class="bold" style="background-color:#fff;" for="kat{{kat.id}}">{{kat.kategoriAd}}</label>
+            </div>
+        </div>
+    </li>
+    <li class="list-group-item list-group-item-info" ng-show="getKategorilerSemt.result">
+        <button class="btn btn-success js-scroll-by bold" style="display: block; width: 100%; background-color:#1889C1;" ng-click="emlakIlanSerach()">İlan Filtrele >></button>
+        @*<input type="button" style="margin-bottom:10px;" class="btn btn-primary col-xs-12 col-md-12 col-sm-12 col-md-12 lg" scroll-to="#catalogSection" ng-click="emlakIlanSerach()" value="Filtrele" />*@
+    </li>
+</ul>

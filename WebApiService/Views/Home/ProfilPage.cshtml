@@ -1,0 +1,86 @@
+﻿@{
+    ViewBag.Title = "ProfilPage";
+    Layout = "~/Views/Shared/_TorbaliBuradaMasterPage.cshtml";
+
+}
+
+<div class="container body-content" ng-controller="InfinityScrollController" >
+   
+    @*<span ng-show="IsLoading" class="loading">Loading...</span>*@
+    
+    <div class="row" style="margin-top:20px">
+        @*<div class="col-md-4">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active"><a href="#">Üyelik Bilgileri </a></li>
+                <li role="presentation"><a href="#">Şifre Değiştir</a></li>
+                <li role="presentation"><a href="#">İlanlarım</a></li>
+                <li role="presentation">
+                    <a href="/Create">İlan Ekle</a>                
+                   
+                </li>
+            </ul>
+        </div>*@
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">İlan Ekle</div>
+                <div class="panel-body">
+
+                    <div class="col-md-6 site-margin-bottom-10">
+                        <a href="Home/ManageUser" type="button" class="btn btn-lg btn-primary btn-block" >
+                            <span class="visible-xs-block visible-sm-block visible-md-block visible-lg-block">✔ Yeni İlan Ekle</span>
+                        </a>
+                    </div>
+                    <div class="col-md-6 site-margin-bottom-10">
+                        <a href="/Musteriler" type="button" class="btn btn-lg btn-default btn-block">
+                            <span class="visible-xs-block visible-sm-block visible-md-block visible-lg-block">✔ Müşteriler <span class="badge">4</span></span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+                        <div class="panel panel-default">
+                    <div class="panel-heading">İlan Bilgileri</div>
+                    <div class="panel-body">
+                      
+                        <div infinityscroll="NextPage()" style="height:200px; overflow:auto;">
+                            <!--Large-->
+                            <div class="table-responsive">
+                                <table class="table table-hover table-responsive">
+                                    <thead>
+                                        <tr>
+                                            <th>Id</th>
+                                            <th>Baslik</th>
+                                            <th class="hidden-xs">Fiyat</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr ng-repeat="item in EmployeeList">
+                                            <td>{{item.id}}</td>
+                                            <td>{{item.baslik}}</td>
+                                            <td class="hidden-xs">{{item.fiyat | myCurrency }}</td>
+                                            <td>
+                                                <a class="btn btn-danger btn-sm" href="#">
+                                                    <i class="fa fa-trash-o"></i>
+                                                </a>
+                                                <a class="btn btn-primary btn-sm" href="#">
+                                                    <i class="fa fa-cog"></i>                                                 </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+
+                          
+                        </div>
+
+                        <span ng-show="IsLoading" class="viewLoading">
+                            <img src="~/Content/Images/loading.gif" /> Lütfen bekleyiniz...
+                        </span>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>

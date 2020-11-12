@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title> 
+    <!--1b4PFa6x -->
+    <!--[if lt IE 9]>
+        @Scripts.Render("~/Content/Tema-jsss")
+    <![endif]-->  
+    <link rel="shortcut icon" href="#" title="Favicon" />   
+    <link href='http://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>  
+    @Styles.Render("~/Content/Tema")  
+    @Scripts.Render("~/Content/Tema-jss")
+</head>
+<body>
+<div class="body-wrapper full-width-mode boxed-mode">
+        @RenderBody()
+</div> 
+@Scripts.Render("~/Content/Tema-js3")
+@RenderSection("scripts", required: false)
+</body>
+</html>

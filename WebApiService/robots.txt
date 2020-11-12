@@ -1,0 +1,9 @@
+User-Agent: *
+
+Allow: /Home/Index
+Allow:/Home
+Allow: /Home/Search
+Allow:/Home/IlanDetay
+Disallow: /Login
+
+Sitemap: http://www.torbaliburada.com/Home/SiteMap.xml

@@ -1,0 +1,126 @@
+﻿
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_LoginMasterPage.cshtml";
+}
+
+<div class="container body-content" ng-controller="loginController">
+    <hr style="border:0; margin-top:30px">
+    <div class="row">
+        <div class="panel panel-default">
+            <div class="panel-heading">Yeni Üye Kayıt</div>
+            <div class="panel-body">
+                <div class="col-md-8 col-md-offset-3">
+                    <section id="loginForm" ng-cloak>
+                        <span ng-show="isViewLoading" class="viewLoading">
+                            <img src="~/Content/Images/loading.gif" /> loading...
+                        </span>
+                        <div ng-class="result">{{message}}</div>
+                        <form name="frmCustomer" novalidate>
+                            @*<hr style="border:0; margin-top:30px">*@
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="userRegistrationEmail">E-Mail adresi</label>
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userRegistrationEmail" name="userRegistrationEmail" placeholder="E-Mail adresinizi yazınız." required type="email">
+                                    <div ng-show="frmCustomer.$submitted || frmCustomer.userRegistrationEmail.$touched">
+                                        <span class="error fade in" ng-show="frmCustomer.userRegistrationEmail.$error.required">* Email adresi zorunludur.</span>
+                                        <span class="error fade in" ng-show="frmCustomer.userRegistrationEmail.$error.email">* E-Mail adresi hatalı.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="userRegistrationPassword">Şifre</label>
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userRegistrationPassword" name="userRegistrationPassword" placeholder="Şifre giriniz." required ng-minlength="6" type="password">
+                                    <div ng-show="frmCustomer.$submitted || frmCustomer.userRegistrationPassword.$touched">
+                                        <span class="error fade in" ng-show="frmCustomer.userRegistrationPassword.$error.required">* Şifre zorunludur.</span>
+                                        <span class="error fade in" ng-show="frmCustomer.userRegistrationPasswor.$error.minlegth">* Şifre minumun 6 karakter uzunluğunda olmalıdır.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="userRegistrationConfirmPassword">Şifrenizi tekrar giriniz</label>
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userRegistrationConfirmPassword" name="userRegistrationConfirmPassword" placeholder="Şifre giriniz" required ng-minlength="6" type="password">
+                                    <div ng-show="frmCustomer.$submitted || frmCustomer.userRegistrationConfirmPassword.$touched">
+                                        <span ng-show="IsMatch">* Girdiğiniz şifreler aynı değil!</span>
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationConfirmPassword.$error.required">* Şifrenizi tekrar giriniz.</span>
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationConfirmPassword.$error.minlegth">* Şifrenizi minumum 6 karakter uzunluğunda olmalıdır.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="userRegistrationFirstName">Adınız</label>
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userRegistrationFirstName" name="userRegistrationFirstName" placeholder="Ad giriniz." required ng-minlength="3" type="text">
+                                    <div ng-show="frmCustomer.$submitted ||frmCustomer.userRegistrationFirstName.$touched">
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationFirstName.$error.required">* Ad zorunlu alandır.</span>
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationFirstName.$error.minlegth">İsminiz minumum 3 karakter uzunluğunda olmalıdır.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="userRegistrationLastName">Soyadınız</label>
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userRegistrationLastName" name="userRegistrationLastName" placeholder="Soyad giriniz." required ng-minlength="2" type="text">
+                                    <div ng-show="frmCustomer.$submitted ||frmCustomer.userRegistrationLastName.$touched">
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationLastName.$error.required">* Soyad zorunlu alandır.</span>
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationLastName.$error.minlegth">Soyadınız minumum 2 karakter uzunluğunda olmalıdır.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="userRegistrationPhone">Cep telefon numarası</label>
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userRegistrationPhone" name="userRegistrationPhone" placeholder="Cep telefonu giriniz." required ng-minlength="10" ng-maxlength="11" type="tel">
+                                    <div ng-show="frmCustomer.$submitted ||frmCustomer.userRegistrationPhone.$touched">
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationPhone.$error.required">* Cep telefonu zorunlu alandır.</span>
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationPhone.$error.minlegth">* Cep telefonunuz minumum 10 karakter uzunluğunda olmalıdır.</span>
+                                        <span class="error fada in" ng-show="frmCustomer.userRegistrationPhone.$error.maxlegth">* Cep telefonunuz minumum 11 karakter uzunluğunda olmalıdır.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="userFirmaAd">Firma adı</label>
+                                <div class="col-md-9">
+                                    <input class="form-control" ng-model="userFirmaAd" name="userFirmaAd" placeholder="Kurumsal üyelerimiz için zorunludur." type="text">
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label" for="userRegistrationDuyuru">Firma Türü</label>
+                                <div class="col-md-9">
+                                    <input name="userRegistrationDuyuru" ng-model="userRegistrationDuyuru" value="0" type="radio" required="">
+                                    Emlak Ofisi
+                                    <div ng-show="frmCustomer.$submitted ||frmCustomer.userRegistrationDuyuru.$touched">
+                                        <span class="error fada in" ng-show="!userRegistrationDuyuru">* Lütfen seçiniz </span>
+                                    </div>
+                                    <br />
+                                    <input name="userRegistrationDuyuru" ng-model="userRegistrationDuyuru" value="1" type="radio" required="">
+                                    İnşaat Firması
+                                    <div ng-show="frmCustomer.$submitted ||frmCustomer.userRegistrationDuyuru.$touched">
+                                        <span class="error fada in" ng-show="!userRegistrationDuyuru">* Lütfen seçiniz </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-md-3 control-label"></label>
+                                <div class="col-md-9">
+                                    <input value="Kaydet" class="btn btn-primary col-md-12" type="submit" ng-click="registerUser()" ng-disabled="frmCustomer.$invalid">
+
+                                </div>
+
+                            </div>
+
+
+                        </form>
+
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+

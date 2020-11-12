@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="77ab7882ddfe47a3aa7bfc117a42eec1" Name="Diagram1">
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.ArsaGenelOzelikleri" Width="1.5" PointX="0.75" PointY="1.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.ArsaKonumu" Width="1.5" PointX="2.75" PointY="1.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.ArsaManzara" Width="1.5" PointX="0.75" PointY="4.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.Bulten" Width="1.5" PointX="2.75" PointY="4.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.Dosyalar" Width="1.5" PointX="13.25" PointY="4.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakAltyapi" Width="1.5" PointX="0.75" PointY="7.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakBanyoSayisi" Width="1.5" PointX="6" PointY="27.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakBinaYasi" Width="1.5" PointX="6" PointY="18.125" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakBulunduguKat" Width="1.5" PointX="6" PointY="6" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakCephe" Width="1.5" PointX="2.75" PointY="7.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakDetayBilgisi" Width="1.5" PointX="7.75" PointY="8.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakDisOzellikler" Width="1.5" PointX="0.75" PointY="10.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakGenelOzellikler" Width="1.5" PointX="9.75" PointY="8.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakIcOzellikler" Width="1.5" PointX="10.75" PointY="11.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakIlanTipi" Width="1.5" PointX="12.75" PointY="10.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakImarDurumu" Width="1.5" PointX="12.75" PointY="13.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakIsitmaTuru" Width="1.5" PointX="6" PointY="44.75" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakKategoriler" Width="1.5" PointX="0.75" PointY="14.625" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakKatSayisi" Width="1.5" PointX="6" PointY="0.75" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakKimden" Width="1.5" PointX="3" PointY="24.25" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakKonutTipi" Width="1.5" PointX="14.75" PointY="10.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakKullanimAmaci" Width="1.5" PointX="14.75" PointY="13.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakKullanimDurumu" Width="1.5" PointX="6" PointY="47.125" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakLocation" Width="1.5" PointX="6" PointY="52.875" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakManzara" Width="1.5" PointX="15.75" PointY="1.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakMuhit" Width="1.5" PointX="15.75" PointY="4.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakOdaSayisi" Width="1.5" PointX="6" PointY="3.375" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakSiteIcerisinde" Width="1.5" PointX="6" PointY="34.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakTakasli" Width="1.5" PointX="0.75" PointY="19.25" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakTapuDurumu" Width="1.5" PointX="15.75" PointY="7.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakUlasim" Width="1.5" PointX="10.75" PointY="16.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakYapiDurumu" Width="1.5" PointX="6" PointY="50.25" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.EmlakYapiTipi" Width="1.5" PointX="12.75" PointY="16.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.Etiketler" Width="1.5" PointX="13.25" PointY="2" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanAdresler" Width="1.5" PointX="8.25" PointY="22" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanCepheOzellikler" Width="1.5" PointX="5.25" PointY="39.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanDisOzellikler" Width="1.5" PointX="5.25" PointY="15.375" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanIcOzellikler" Width="1.5" PointX="5.25" PointY="42" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanIlanlar" Width="1.5" PointX="3" PointY="17.5" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanKimden" Width="1.5" PointX="5.25" PointY="24.125" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanKonutTipiOzellikler" Width="1.5" PointX="5.25" PointY="10.25" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanKullanimAmaci" Width="1.5" PointX="5.25" PointY="37" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Width="1.5" PointX="8.25" PointY="12.625" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanManzaraOzellikler" Width="1.5" PointX="5.25" PointY="20.625" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanMuhitOzellikler" Width="1.5" PointX="5.25" PointY="12.875" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanUlasimOzellikler" Width="1.5" PointX="5.25" PointY="31.75" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.IlanYapiDurumu" Width="1.5" PointX="8.25" PointY="19.125" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.Kategoriler" Width="1.5" PointX="8.75" PointY="3.875" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.Konular" Width="1.5" PointX="11" PointY="3.25" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.Resimler" Width="1.5" PointX="13.25" PointY="7" />
+        <EntityTypeShape EntityType="sidart_torbaliBuradaModel.ZiyaretciUrl" Width="1.5" PointX="14.75" PointY="16.5" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_Dosyalar_Konular" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBanyoSayisi" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBinaYasi" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBulunduguKat" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakIsitmaTuru" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakKatSayisi" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanKimden_EmlakKimden" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakKullanimDurumu" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanAdresler_EmlakLocation" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakOdaSayisi" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakSiteIcerisinde" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanIlanlar_EmlakTakasli" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanYapiDurumu_EmlakYapiDurumu" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_Etiketler_Konular" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanAdresler_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanCepheOzellikler_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanDisOzellikler_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanIcOzellikler_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanKimden_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanKonutTipiOzellikler_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanKullanimAmaci_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanManzaraOzellikler_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanMuhitOzellikler_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanUlasimOzellikler_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_IlanYapiDurumu_IlanIlanlar" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.FK_Resimler_Konular" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.IlanKategori" />
+        <AssociationConnector Association="sidart_torbaliBuradaModel.KategoriKonu" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,8 @@
+﻿<a ng-show="KonutTipi" class="btn btn-default btn-select btn-select-light">
+    <input type="hidden" ng-model="parametersearch.KonutTipi" class="btn-select-input" id="" name="" value="" />
+    <span class="btn-select-value konut"><i class='fa fa-hand-pointer-o' aria-hidden='true'></i> Emlak Türünü Seçiniz</span>
+    <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+    <ul>
+        <li ng-repeat="kat in emlakKonutTipi.result" ng-cloak  id="{{kat.id}}" ng-click="clickKonutTipi(kat.id)">{{kat.konutTipi}}</li>
+    </ul>
+</a>

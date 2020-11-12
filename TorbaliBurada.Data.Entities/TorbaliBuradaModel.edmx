@@ -1,0 +1,2503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="sidart_torbaliBuradaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="ArsaGenelOzelikleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ArsaGenelOzellik" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ArsaKonumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ArsaKonum" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="ArsaManzara">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ArsaManzarasi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Bulten">
+          <Key>
+            <PropertyRef Name="BultenID" />
+          </Key>
+          <Property Name="BultenID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AdSoyad" Type="nvarchar" MaxLength="50" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" />
+          <Property Name="Durumu" Type="int" />
+        </EntityType>
+        <EntityType Name="Dosyalar">
+          <Key>
+            <PropertyRef Name="DosyaID" />
+          </Key>
+          <Property Name="DosyaID" Type="int" Nullable="false" />
+          <Property Name="KonuID" Type="int" />
+          <Property Name="DosyaAd" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="EmlakAltyapi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Altyapi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakBanyoSayisi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BanyoSayisi" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="EmlakBinaYasi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BinaYasi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakBulunduguKat">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="BulunduguKat" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakCephe">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Cephe" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakDetayBilgisi">
+          <Key>
+            <PropertyRef Name="DetayBilgiID" />
+          </Key>
+          <Property Name="DetayBilgiID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DetayBilgi" Type="nvarchar" MaxLength="50" />
+          <Property Name="KategoriID" Type="char" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="EmlakDisOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisOzellik" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakGenelOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="GenelOzellikler" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakIcOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IcOzellik" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakIlanTipi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakTipi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakImarDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakDurumu" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakIsitmaTuru">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Isitma" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakKategoriler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KategoriAd" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentID" Type="int" />
+          <Property Name="Icon" Type="nvarchar" MaxLength="50" />
+          <Property Name="Title" Type="nvarchar" MaxLength="50" />
+          <Property Name="Keyword" Type="nvarchar" MaxLength="50" />
+          <Property Name="Description" Type="nvarchar" MaxLength="50" />
+          <Property Name="Aciklama" Type="text" />
+          <Property Name="Durum" Type="char" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="EmlakKatSayisi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KatSayisi" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="EmlakKimden">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Kimden" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakKonutTipi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KonutTipi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakKullanimAmaci">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullanimAmaci" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakKullanimDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KullanimDurumu" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakLocation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LocationName" Type="nvarchar" MaxLength="50" />
+          <Property Name="ParentID" Type="int" />
+          <Property Name="PlakaID" Type="int" />
+          <Property Name="Logo" Type="nvarchar" MaxLength="50" />
+          <Property Name="Aciklama" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="EmlakManzara">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Manzara" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="EmlakMuhit">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Muhit" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakOdaSayisi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="OdaSayisi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakSiteIcerisinde">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="SiteIcerisinde" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakTakasli">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Takasli" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="EmlakTapuDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TapuDurumu" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakUlasim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ulasim" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EmlakYapiDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YapiDurumu" Type="nchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="EmlakYapiTipi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="YapiTipi" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Etiketler">
+          <Key>
+            <PropertyRef Name="EtiketID" />
+          </Key>
+          <Property Name="EtiketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Etiket" Type="nvarchar" MaxLength="150" />
+          <Property Name="KonuID" Type="int" />
+        </EntityType>
+        <EntityType Name="IlanAdresler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="LocationID" Type="int" />
+          <Property Name="Adres" Type="nvarchar" MaxLength="350" />
+        </EntityType>
+        <EntityType Name="IlanCepheOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="DisOzellik" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="IlanDisOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="DisOzellikler" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="IlanIcOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="IcOzellikler" Type="nvarchar" MaxLength="150" />
+        </EntityType>
+        <EntityType Name="IlanIlanlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Baslik" Type="nvarchar" MaxLength="350" />
+          <Property Name="Aciklama" Type="text" />
+          <Property Name="Fiyat" Type="decimal" Precision="18" Scale="2" />
+          <Property Name="MetreKare" Type="nchar" MaxLength="10" />
+          <Property Name="TakasliID" Type="int" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="IlanKategori">
+          <Key>
+            <PropertyRef Name="KategoriID" />
+            <PropertyRef Name="EmlakIlanID" />
+          </Key>
+          <Property Name="KategoriID" Type="int" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="IlanKimden">
+          <Key>
+            <PropertyRef Name="IlanKimdenID" />
+          </Key>
+          <Property Name="IlanKimdenID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="KimdemID" Type="int" />
+        </EntityType>
+        <EntityType Name="IlanKonutTipiOzellikler">
+          <Key>
+            <PropertyRef Name="IlanKonutTipiOzelliklerID" />
+          </Key>
+          <Property Name="IlanKonutTipiOzelliklerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="KonutTipiOzellikler" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="IlanKullanimAmaci">
+          <Key>
+            <PropertyRef Name="IlanKullanimAmaciID" />
+          </Key>
+          <Property Name="IlanKullanimAmaciID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="KullanimAmaci" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="IlanlarEmlakGenel">
+          <Key>
+            <PropertyRef Name="IlanEmlakGenelID" />
+          </Key>
+          <Property Name="IlanEmlakGenelID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="OdaSayisiID" Type="int" />
+          <Property Name="BinaYasiID" Type="int" />
+          <Property Name="BulunduguKatID" Type="int" />
+          <Property Name="KatSayisiID" Type="int" />
+          <Property Name="IsitmaID" Type="int" />
+          <Property Name="BanyoSayisiID" Type="int" />
+          <Property Name="KullanimDurumuID" Type="int" />
+          <Property Name="SiteIcerisindeID" Type="int" />
+          <Property Name="Aidat" Type="bit" />
+        </EntityType>
+        <EntityType Name="IlanManzaraOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="ManzaraOzellikler" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="IlanMuhitOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="MuhitOzellikler" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="IlanUlasimOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="UlasimOzellikler" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="IlanYapiDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="EmlakIlanID" Type="int" />
+          <Property Name="YapiDurumuID" Type="int" />
+        </EntityType>
+        <EntityType Name="KategoriKonu">
+          <Key>
+            <PropertyRef Name="Id" />
+            <PropertyRef Name="KonuID" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="KonuID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Kategoriler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KategoriAd" Type="nvarchar" MaxLength="50" />
+          <Property Name="Aciklama" Type="text" />
+          <Property Name="Seo" Type="nvarchar" MaxLength="150" />
+          <Property Name="Keywords" Type="nvarchar" MaxLength="250" />
+          <Property Name="Description" Type="nvarchar" MaxLength="250" />
+          <Property Name="Statu" Type="nchar" MaxLength="10" />
+          <Property Name="ParentID" Type="int" />
+          <Property Name="Url" Type="nvarchar" MaxLength="250" />
+          <Property Name="Icon" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Konular">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Baslik" Type="nvarchar" MaxLength="250" />
+          <Property Name="KisaIcerik" Type="text" />
+          <Property Name="UzunIcerik" Type="text" />
+          <Property Name="Resim" Type="nvarchar" MaxLength="150" />
+          <Property Name="Tarih" Type="datetime" />
+          <Property Name="Statu" Type="nchar" MaxLength="10" />
+          <Property Name="OkunmaSayisi" Type="int" />
+          <Property Name="YorumSayisi" Type="int" />
+          <Property Name="Dosya" Type="nvarchar" MaxLength="150" />
+          <Property Name="Manset" Type="int" />
+          <Property Name="Seo" Type="nvarchar" MaxLength="150" />
+          <Property Name="Description" Type="nvarchar" MaxLength="250" />
+        </EntityType>
+        <EntityType Name="Resimler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="KonuID" Type="int" />
+          <Property Name="Resim" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="ZiyaretciUrl">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Ip" Type="nvarchar" MaxLength="50" />
+          <Property Name="RefererUrl" Type="nvarchar" MaxLength="350" />
+          <Property Name="GetUrl" Type="nvarchar" MaxLength="550" />
+          <Property Name="Browser" Type="nvarchar" MaxLength="50" />
+          <Property Name="Tarih" Type="date" />
+        </EntityType>
+        <Association Name="FK_Dosyalar_Konular">
+          <End Role="Konular" Type="Self.Konular" Multiplicity="0..1" />
+          <End Role="Dosyalar" Type="Self.Dosyalar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Konular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Dosyalar">
+              <PropertyRef Name="KonuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Etiketler_Konular">
+          <End Role="Konular" Type="Self.Konular" Multiplicity="0..1" />
+          <End Role="Etiketler" Type="Self.Etiketler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Konular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Etiketler">
+              <PropertyRef Name="KonuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanAdresler_EmlakLocation">
+          <End Role="EmlakLocation" Type="Self.EmlakLocation" Multiplicity="0..1" />
+          <End Role="IlanAdresler" Type="Self.IlanAdresler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakLocation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanAdresler">
+              <PropertyRef Name="LocationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanAdresler_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanAdresler" Type="Self.IlanAdresler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanAdresler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanCepheOzellikler_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanCepheOzellikler" Type="Self.IlanCepheOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanCepheOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanDisOzellikler_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanDisOzellikler" Type="Self.IlanDisOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanDisOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanIcOzellikler_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanIcOzellikler" Type="Self.IlanIcOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanIcOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanIlanlar_EmlakTakasli">
+          <End Role="EmlakTakasli" Type="Self.EmlakTakasli" Multiplicity="0..1" />
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakTakasli">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanIlanlar">
+              <PropertyRef Name="TakasliID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKategori_EmlakKategoriler">
+          <End Role="EmlakKategoriler" Type="Self.EmlakKategoriler" Multiplicity="1" />
+          <End Role="IlanKategori" Type="Self.IlanKategori" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakKategoriler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKategori">
+              <PropertyRef Name="KategoriID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKategori_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="1" />
+          <End Role="IlanKategori" Type="Self.IlanKategori" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKategori">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKimden_EmlakKimden">
+          <End Role="EmlakKimden" Type="Self.EmlakKimden" Multiplicity="0..1" />
+          <End Role="IlanKimden" Type="Self.IlanKimden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakKimden">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKimden">
+              <PropertyRef Name="KimdemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKimden_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanKimden" Type="Self.IlanKimden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKimden">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKonutTipiOzellikler_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanKonutTipiOzellikler" Type="Self.IlanKonutTipiOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKonutTipiOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKullanimAmaci_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanKullanimAmaci" Type="Self.IlanKullanimAmaci" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKullanimAmaci">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakBanyoSayisi">
+          <End Role="EmlakBanyoSayisi" Type="Self.EmlakBanyoSayisi" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakBanyoSayisi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="BanyoSayisiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakBinaYasi">
+          <End Role="EmlakBinaYasi" Type="Self.EmlakBinaYasi" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakBinaYasi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="BinaYasiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakBulunduguKat">
+          <End Role="EmlakBulunduguKat" Type="Self.EmlakBulunduguKat" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakBulunduguKat">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="BulunduguKatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakIsitmaTuru">
+          <End Role="EmlakIsitmaTuru" Type="Self.EmlakIsitmaTuru" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakIsitmaTuru">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="IsitmaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakKatSayisi">
+          <End Role="EmlakKatSayisi" Type="Self.EmlakKatSayisi" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakKatSayisi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="KatSayisiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakKullanimDurumu">
+          <End Role="EmlakKullanimDurumu" Type="Self.EmlakKullanimDurumu" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakKullanimDurumu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="KullanimDurumuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakOdaSayisi">
+          <End Role="EmlakOdaSayisi" Type="Self.EmlakOdaSayisi" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakOdaSayisi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="OdaSayisiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakSiteIcerisinde">
+          <End Role="EmlakSiteIcerisinde" Type="Self.EmlakSiteIcerisinde" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakSiteIcerisinde">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="SiteIcerisindeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanlarEmlakGenel" Type="Self.IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanManzaraOzellikler_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanManzaraOzellikler" Type="Self.IlanManzaraOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanManzaraOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanMuhitOzellikler_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanMuhitOzellikler" Type="Self.IlanMuhitOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanMuhitOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanUlasimOzellikler_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanUlasimOzellikler" Type="Self.IlanUlasimOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanUlasimOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanYapiDurumu_EmlakYapiDurumu">
+          <End Role="EmlakYapiDurumu" Type="Self.EmlakYapiDurumu" Multiplicity="0..1" />
+          <End Role="IlanYapiDurumu" Type="Self.IlanYapiDurumu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakYapiDurumu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanYapiDurumu">
+              <PropertyRef Name="YapiDurumuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanYapiDurumu_IlanIlanlar">
+          <End Role="IlanIlanlar" Type="Self.IlanIlanlar" Multiplicity="0..1" />
+          <End Role="IlanYapiDurumu" Type="Self.IlanYapiDurumu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanYapiDurumu">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KategoriKonu_Kategoriler">
+          <End Role="Kategoriler" Type="Self.Kategoriler" Multiplicity="1" />
+          <End Role="KategoriKonu" Type="Self.KategoriKonu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Kategoriler">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KategoriKonu">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_KategoriKonu_Konular">
+          <End Role="Konular" Type="Self.Konular" Multiplicity="1" />
+          <End Role="KategoriKonu" Type="Self.KategoriKonu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Konular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="KategoriKonu">
+              <PropertyRef Name="KonuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Resimler_Konular">
+          <End Role="Konular" Type="Self.Konular" Multiplicity="0..1" />
+          <End Role="Resimler" Type="Self.Resimler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Konular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Resimler">
+              <PropertyRef Name="KonuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="sidart_torbaliBuradaModelStoreContainer">
+          <EntitySet Name="ArsaGenelOzelikleri" EntityType="Self.ArsaGenelOzelikleri" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="ArsaKonumu" EntityType="Self.ArsaKonumu" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="ArsaManzara" EntityType="Self.ArsaManzara" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="Bulten" EntityType="Self.Bulten" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="Dosyalar" EntityType="Self.Dosyalar" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakAltyapi" EntityType="Self.EmlakAltyapi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakBanyoSayisi" EntityType="Self.EmlakBanyoSayisi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakBinaYasi" EntityType="Self.EmlakBinaYasi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakBulunduguKat" EntityType="Self.EmlakBulunduguKat" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakCephe" EntityType="Self.EmlakCephe" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakDetayBilgisi" EntityType="Self.EmlakDetayBilgisi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakDisOzellikler" EntityType="Self.EmlakDisOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakGenelOzellikler" EntityType="Self.EmlakGenelOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakIcOzellikler" EntityType="Self.EmlakIcOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakIlanTipi" EntityType="Self.EmlakIlanTipi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakImarDurumu" EntityType="Self.EmlakImarDurumu" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakIsitmaTuru" EntityType="Self.EmlakIsitmaTuru" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakKategoriler" EntityType="Self.EmlakKategoriler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakKatSayisi" EntityType="Self.EmlakKatSayisi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakKimden" EntityType="Self.EmlakKimden" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakKonutTipi" EntityType="Self.EmlakKonutTipi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakKullanimAmaci" EntityType="Self.EmlakKullanimAmaci" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakKullanimDurumu" EntityType="Self.EmlakKullanimDurumu" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakLocation" EntityType="Self.EmlakLocation" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakManzara" EntityType="Self.EmlakManzara" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakMuhit" EntityType="Self.EmlakMuhit" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakOdaSayisi" EntityType="Self.EmlakOdaSayisi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakSiteIcerisinde" EntityType="Self.EmlakSiteIcerisinde" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakTakasli" EntityType="Self.EmlakTakasli" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakTapuDurumu" EntityType="Self.EmlakTapuDurumu" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakUlasim" EntityType="Self.EmlakUlasim" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakYapiDurumu" EntityType="Self.EmlakYapiDurumu" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="EmlakYapiTipi" EntityType="Self.EmlakYapiTipi" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="Etiketler" EntityType="Self.Etiketler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanAdresler" EntityType="Self.IlanAdresler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanCepheOzellikler" EntityType="Self.IlanCepheOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanDisOzellikler" EntityType="Self.IlanDisOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanIcOzellikler" EntityType="Self.IlanIcOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanIlanlar" EntityType="Self.IlanIlanlar" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanKategori" EntityType="Self.IlanKategori" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanKimden" EntityType="Self.IlanKimden" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanKonutTipiOzellikler" EntityType="Self.IlanKonutTipiOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanKullanimAmaci" EntityType="Self.IlanKullanimAmaci" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanlarEmlakGenel" EntityType="Self.IlanlarEmlakGenel" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanManzaraOzellikler" EntityType="Self.IlanManzaraOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanMuhitOzellikler" EntityType="Self.IlanMuhitOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanUlasimOzellikler" EntityType="Self.IlanUlasimOzellikler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="IlanYapiDurumu" EntityType="Self.IlanYapiDurumu" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="KategoriKonu" EntityType="Self.KategoriKonu" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="Kategoriler" EntityType="Self.Kategoriler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="Konular" EntityType="Self.Konular" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="Resimler" EntityType="Self.Resimler" Schema="sidart_tor" store:Type="Tables" />
+          <EntitySet Name="ZiyaretciUrl" EntityType="Self.ZiyaretciUrl" Schema="sidart_tor" store:Type="Tables" />
+          <AssociationSet Name="FK_Dosyalar_Konular" Association="Self.FK_Dosyalar_Konular">
+            <End Role="Konular" EntitySet="Konular" />
+            <End Role="Dosyalar" EntitySet="Dosyalar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Etiketler_Konular" Association="Self.FK_Etiketler_Konular">
+            <End Role="Konular" EntitySet="Konular" />
+            <End Role="Etiketler" EntitySet="Etiketler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanAdresler_EmlakLocation" Association="Self.FK_IlanAdresler_EmlakLocation">
+            <End Role="EmlakLocation" EntitySet="EmlakLocation" />
+            <End Role="IlanAdresler" EntitySet="IlanAdresler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanAdresler_IlanIlanlar" Association="Self.FK_IlanAdresler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanAdresler" EntitySet="IlanAdresler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanCepheOzellikler_IlanIlanlar" Association="Self.FK_IlanCepheOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanCepheOzellikler" EntitySet="IlanCepheOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanDisOzellikler_IlanIlanlar" Association="Self.FK_IlanDisOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanDisOzellikler" EntitySet="IlanDisOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanIcOzellikler_IlanIlanlar" Association="Self.FK_IlanIcOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanIcOzellikler" EntitySet="IlanIcOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanIlanlar_EmlakTakasli" Association="Self.FK_IlanIlanlar_EmlakTakasli">
+            <End Role="EmlakTakasli" EntitySet="EmlakTakasli" />
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKategori_EmlakKategoriler" Association="Self.FK_IlanKategori_EmlakKategoriler">
+            <End Role="EmlakKategoriler" EntitySet="EmlakKategoriler" />
+            <End Role="IlanKategori" EntitySet="IlanKategori" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKategori_IlanIlanlar" Association="Self.FK_IlanKategori_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanKategori" EntitySet="IlanKategori" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKimden_EmlakKimden" Association="Self.FK_IlanKimden_EmlakKimden">
+            <End Role="EmlakKimden" EntitySet="EmlakKimden" />
+            <End Role="IlanKimden" EntitySet="IlanKimden" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKimden_IlanIlanlar" Association="Self.FK_IlanKimden_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanKimden" EntitySet="IlanKimden" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKonutTipiOzellikler_IlanIlanlar" Association="Self.FK_IlanKonutTipiOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanKonutTipiOzellikler" EntitySet="IlanKonutTipiOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKullanimAmaci_IlanIlanlar" Association="Self.FK_IlanKullanimAmaci_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanKullanimAmaci" EntitySet="IlanKullanimAmaci" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakBanyoSayisi" Association="Self.FK_IlanlarEmlakGenel_EmlakBanyoSayisi">
+            <End Role="EmlakBanyoSayisi" EntitySet="EmlakBanyoSayisi" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakBinaYasi" Association="Self.FK_IlanlarEmlakGenel_EmlakBinaYasi">
+            <End Role="EmlakBinaYasi" EntitySet="EmlakBinaYasi" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakBulunduguKat" Association="Self.FK_IlanlarEmlakGenel_EmlakBulunduguKat">
+            <End Role="EmlakBulunduguKat" EntitySet="EmlakBulunduguKat" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakIsitmaTuru" Association="Self.FK_IlanlarEmlakGenel_EmlakIsitmaTuru">
+            <End Role="EmlakIsitmaTuru" EntitySet="EmlakIsitmaTuru" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakKatSayisi" Association="Self.FK_IlanlarEmlakGenel_EmlakKatSayisi">
+            <End Role="EmlakKatSayisi" EntitySet="EmlakKatSayisi" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakKullanimDurumu" Association="Self.FK_IlanlarEmlakGenel_EmlakKullanimDurumu">
+            <End Role="EmlakKullanimDurumu" EntitySet="EmlakKullanimDurumu" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakOdaSayisi" Association="Self.FK_IlanlarEmlakGenel_EmlakOdaSayisi">
+            <End Role="EmlakOdaSayisi" EntitySet="EmlakOdaSayisi" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakSiteIcerisinde" Association="Self.FK_IlanlarEmlakGenel_EmlakSiteIcerisinde">
+            <End Role="EmlakSiteIcerisinde" EntitySet="EmlakSiteIcerisinde" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_IlanIlanlar" Association="Self.FK_IlanlarEmlakGenel_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanManzaraOzellikler_IlanIlanlar" Association="Self.FK_IlanManzaraOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanManzaraOzellikler" EntitySet="IlanManzaraOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanMuhitOzellikler_IlanIlanlar" Association="Self.FK_IlanMuhitOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanMuhitOzellikler" EntitySet="IlanMuhitOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanUlasimOzellikler_IlanIlanlar" Association="Self.FK_IlanUlasimOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanUlasimOzellikler" EntitySet="IlanUlasimOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanYapiDurumu_EmlakYapiDurumu" Association="Self.FK_IlanYapiDurumu_EmlakYapiDurumu">
+            <End Role="EmlakYapiDurumu" EntitySet="EmlakYapiDurumu" />
+            <End Role="IlanYapiDurumu" EntitySet="IlanYapiDurumu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanYapiDurumu_IlanIlanlar" Association="Self.FK_IlanYapiDurumu_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanYapiDurumu" EntitySet="IlanYapiDurumu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KategoriKonu_Kategoriler" Association="Self.FK_KategoriKonu_Kategoriler">
+            <End Role="Kategoriler" EntitySet="Kategoriler" />
+            <End Role="KategoriKonu" EntitySet="KategoriKonu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_KategoriKonu_Konular" Association="Self.FK_KategoriKonu_Konular">
+            <End Role="Konular" EntitySet="Konular" />
+            <End Role="KategoriKonu" EntitySet="KategoriKonu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Resimler_Konular" Association="Self.FK_Resimler_Konular">
+            <End Role="Konular" EntitySet="Konular" />
+            <End Role="Resimler" EntitySet="Resimler" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="sidart_torbaliBuradaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="sidart_torbaliBuradaEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="ArsaGenelOzelikleri" EntityType="sidart_torbaliBuradaModel.ArsaGenelOzelikleri" />
+          <EntitySet Name="ArsaKonumu" EntityType="sidart_torbaliBuradaModel.ArsaKonumu" />
+          <EntitySet Name="ArsaManzara" EntityType="sidart_torbaliBuradaModel.ArsaManzara" />
+          <EntitySet Name="Bulten" EntityType="sidart_torbaliBuradaModel.Bulten" />
+          <EntitySet Name="Dosyalar" EntityType="sidart_torbaliBuradaModel.Dosyalar" />
+          <EntitySet Name="EmlakAltyapi" EntityType="sidart_torbaliBuradaModel.EmlakAltyapi" />
+          <EntitySet Name="EmlakBanyoSayisi" EntityType="sidart_torbaliBuradaModel.EmlakBanyoSayisi" />
+          <EntitySet Name="EmlakBinaYasi" EntityType="sidart_torbaliBuradaModel.EmlakBinaYasi" />
+          <EntitySet Name="EmlakBulunduguKat" EntityType="sidart_torbaliBuradaModel.EmlakBulunduguKat" />
+          <EntitySet Name="EmlakCephe" EntityType="sidart_torbaliBuradaModel.EmlakCephe" />
+          <EntitySet Name="EmlakDetayBilgisi" EntityType="sidart_torbaliBuradaModel.EmlakDetayBilgisi" />
+          <EntitySet Name="EmlakDisOzellikler" EntityType="sidart_torbaliBuradaModel.EmlakDisOzellikler" />
+          <EntitySet Name="EmlakGenelOzellikler" EntityType="sidart_torbaliBuradaModel.EmlakGenelOzellikler" />
+          <EntitySet Name="EmlakIcOzellikler" EntityType="sidart_torbaliBuradaModel.EmlakIcOzellikler" />
+          <EntitySet Name="EmlakIlanTipi" EntityType="sidart_torbaliBuradaModel.EmlakIlanTipi" />
+          <EntitySet Name="EmlakImarDurumu" EntityType="sidart_torbaliBuradaModel.EmlakImarDurumu" />
+          <EntitySet Name="EmlakIsitmaTuru" EntityType="sidart_torbaliBuradaModel.EmlakIsitmaTuru" />
+          <EntitySet Name="EmlakKategoriler" EntityType="sidart_torbaliBuradaModel.EmlakKategoriler" />
+          <EntitySet Name="EmlakKatSayisi" EntityType="sidart_torbaliBuradaModel.EmlakKatSayisi" />
+          <EntitySet Name="EmlakKimden" EntityType="sidart_torbaliBuradaModel.EmlakKimden" />
+          <EntitySet Name="EmlakKonutTipi" EntityType="sidart_torbaliBuradaModel.EmlakKonutTipi" />
+          <EntitySet Name="EmlakKullanimAmaci" EntityType="sidart_torbaliBuradaModel.EmlakKullanimAmaci" />
+          <EntitySet Name="EmlakKullanimDurumu" EntityType="sidart_torbaliBuradaModel.EmlakKullanimDurumu" />
+          <EntitySet Name="EmlakLocation" EntityType="sidart_torbaliBuradaModel.EmlakLocation" />
+          <EntitySet Name="EmlakManzara" EntityType="sidart_torbaliBuradaModel.EmlakManzara" />
+          <EntitySet Name="EmlakMuhit" EntityType="sidart_torbaliBuradaModel.EmlakMuhit" />
+          <EntitySet Name="EmlakOdaSayisi" EntityType="sidart_torbaliBuradaModel.EmlakOdaSayisi" />
+          <EntitySet Name="EmlakSiteIcerisinde" EntityType="sidart_torbaliBuradaModel.EmlakSiteIcerisinde" />
+          <EntitySet Name="EmlakTakasli" EntityType="sidart_torbaliBuradaModel.EmlakTakasli" />
+          <EntitySet Name="EmlakTapuDurumu" EntityType="sidart_torbaliBuradaModel.EmlakTapuDurumu" />
+          <EntitySet Name="EmlakUlasim" EntityType="sidart_torbaliBuradaModel.EmlakUlasim" />
+          <EntitySet Name="EmlakYapiDurumu" EntityType="sidart_torbaliBuradaModel.EmlakYapiDurumu" />
+          <EntitySet Name="EmlakYapiTipi" EntityType="sidart_torbaliBuradaModel.EmlakYapiTipi" />
+          <EntitySet Name="Etiketler" EntityType="sidart_torbaliBuradaModel.Etiketler" />
+          <EntitySet Name="IlanAdresler" EntityType="sidart_torbaliBuradaModel.IlanAdresler" />
+          <EntitySet Name="IlanCepheOzellikler" EntityType="sidart_torbaliBuradaModel.IlanCepheOzellikler" />
+          <EntitySet Name="IlanDisOzellikler" EntityType="sidart_torbaliBuradaModel.IlanDisOzellikler" />
+          <EntitySet Name="IlanIcOzellikler" EntityType="sidart_torbaliBuradaModel.IlanIcOzellikler" />
+          <EntitySet Name="IlanIlanlar" EntityType="sidart_torbaliBuradaModel.IlanIlanlar" />
+          <EntitySet Name="IlanKimden" EntityType="sidart_torbaliBuradaModel.IlanKimden" />
+          <EntitySet Name="IlanKonutTipiOzellikler" EntityType="sidart_torbaliBuradaModel.IlanKonutTipiOzellikler" />
+          <EntitySet Name="IlanKullanimAmaci" EntityType="sidart_torbaliBuradaModel.IlanKullanimAmaci" />
+          <EntitySet Name="IlanlarEmlakGenel" EntityType="sidart_torbaliBuradaModel.IlanlarEmlakGenel" />
+          <EntitySet Name="IlanManzaraOzellikler" EntityType="sidart_torbaliBuradaModel.IlanManzaraOzellikler" />
+          <EntitySet Name="IlanMuhitOzellikler" EntityType="sidart_torbaliBuradaModel.IlanMuhitOzellikler" />
+          <EntitySet Name="IlanUlasimOzellikler" EntityType="sidart_torbaliBuradaModel.IlanUlasimOzellikler" />
+          <EntitySet Name="IlanYapiDurumu" EntityType="sidart_torbaliBuradaModel.IlanYapiDurumu" />
+          <EntitySet Name="Kategoriler" EntityType="sidart_torbaliBuradaModel.Kategoriler" />
+          <EntitySet Name="Konular" EntityType="sidart_torbaliBuradaModel.Konular" />
+          <EntitySet Name="Resimler" EntityType="sidart_torbaliBuradaModel.Resimler" />
+          <EntitySet Name="ZiyaretciUrl" EntityType="sidart_torbaliBuradaModel.ZiyaretciUrl" />
+          <AssociationSet Name="FK_Dosyalar_Konular" Association="sidart_torbaliBuradaModel.FK_Dosyalar_Konular">
+            <End Role="Konular" EntitySet="Konular" />
+            <End Role="Dosyalar" EntitySet="Dosyalar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakBanyoSayisi" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBanyoSayisi">
+            <End Role="EmlakBanyoSayisi" EntitySet="EmlakBanyoSayisi" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakBinaYasi" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBinaYasi">
+            <End Role="EmlakBinaYasi" EntitySet="EmlakBinaYasi" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakBulunduguKat" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBulunduguKat">
+            <End Role="EmlakBulunduguKat" EntitySet="EmlakBulunduguKat" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakIsitmaTuru" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakIsitmaTuru">
+            <End Role="EmlakIsitmaTuru" EntitySet="EmlakIsitmaTuru" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakKatSayisi" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakKatSayisi">
+            <End Role="EmlakKatSayisi" EntitySet="EmlakKatSayisi" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKimden_EmlakKimden" Association="sidart_torbaliBuradaModel.FK_IlanKimden_EmlakKimden">
+            <End Role="EmlakKimden" EntitySet="EmlakKimden" />
+            <End Role="IlanKimden" EntitySet="IlanKimden" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakKullanimDurumu" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakKullanimDurumu">
+            <End Role="EmlakKullanimDurumu" EntitySet="EmlakKullanimDurumu" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanAdresler_EmlakLocation" Association="sidart_torbaliBuradaModel.FK_IlanAdresler_EmlakLocation">
+            <End Role="EmlakLocation" EntitySet="EmlakLocation" />
+            <End Role="IlanAdresler" EntitySet="IlanAdresler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakOdaSayisi" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakOdaSayisi">
+            <End Role="EmlakOdaSayisi" EntitySet="EmlakOdaSayisi" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_EmlakSiteIcerisinde" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakSiteIcerisinde">
+            <End Role="EmlakSiteIcerisinde" EntitySet="EmlakSiteIcerisinde" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanIlanlar_EmlakTakasli" Association="sidart_torbaliBuradaModel.FK_IlanIlanlar_EmlakTakasli">
+            <End Role="EmlakTakasli" EntitySet="EmlakTakasli" />
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanYapiDurumu_EmlakYapiDurumu" Association="sidart_torbaliBuradaModel.FK_IlanYapiDurumu_EmlakYapiDurumu">
+            <End Role="EmlakYapiDurumu" EntitySet="EmlakYapiDurumu" />
+            <End Role="IlanYapiDurumu" EntitySet="IlanYapiDurumu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Etiketler_Konular" Association="sidart_torbaliBuradaModel.FK_Etiketler_Konular">
+            <End Role="Konular" EntitySet="Konular" />
+            <End Role="Etiketler" EntitySet="Etiketler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanAdresler_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanAdresler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanAdresler" EntitySet="IlanAdresler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanCepheOzellikler_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanCepheOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanCepheOzellikler" EntitySet="IlanCepheOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanDisOzellikler_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanDisOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanDisOzellikler" EntitySet="IlanDisOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanIcOzellikler_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanIcOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanIcOzellikler" EntitySet="IlanIcOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKimden_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanKimden_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanKimden" EntitySet="IlanKimden" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKonutTipiOzellikler_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanKonutTipiOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanKonutTipiOzellikler" EntitySet="IlanKonutTipiOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanKullanimAmaci_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanKullanimAmaci_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanKullanimAmaci" EntitySet="IlanKullanimAmaci" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanlarEmlakGenel_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanlarEmlakGenel" EntitySet="IlanlarEmlakGenel" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanManzaraOzellikler_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanManzaraOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanManzaraOzellikler" EntitySet="IlanManzaraOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanMuhitOzellikler_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanMuhitOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanMuhitOzellikler" EntitySet="IlanMuhitOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanUlasimOzellikler_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanUlasimOzellikler_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanUlasimOzellikler" EntitySet="IlanUlasimOzellikler" />
+          </AssociationSet>
+          <AssociationSet Name="FK_IlanYapiDurumu_IlanIlanlar" Association="sidart_torbaliBuradaModel.FK_IlanYapiDurumu_IlanIlanlar">
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+            <End Role="IlanYapiDurumu" EntitySet="IlanYapiDurumu" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Resimler_Konular" Association="sidart_torbaliBuradaModel.FK_Resimler_Konular">
+            <End Role="Konular" EntitySet="Konular" />
+            <End Role="Resimler" EntitySet="Resimler" />
+          </AssociationSet>
+          <AssociationSet Name="IlanKategori" Association="sidart_torbaliBuradaModel.IlanKategori">
+            <End Role="EmlakKategoriler" EntitySet="EmlakKategoriler" />
+            <End Role="IlanIlanlar" EntitySet="IlanIlanlar" />
+          </AssociationSet>
+          <AssociationSet Name="KategoriKonu" Association="sidart_torbaliBuradaModel.KategoriKonu">
+            <End Role="Kategoriler" EntitySet="Kategoriler" />
+            <End Role="Konular" EntitySet="Konular" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="ArsaGenelOzelikleri">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ArsaGenelOzellik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ArsaKonumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ArsaKonum" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="ArsaManzara">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ArsaManzarasi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Bulten">
+          <Key>
+            <PropertyRef Name="BultenID" />
+          </Key>
+          <Property Name="BultenID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Durumu" Type="Int32" />
+        </EntityType>
+        <EntityType Name="Dosyalar">
+          <Key>
+            <PropertyRef Name="DosyaID" />
+          </Key>
+          <Property Name="DosyaID" Type="Int32" Nullable="false" />
+          <Property Name="KonuID" Type="Int32" />
+          <Property Name="DosyaAd" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Konular" Relationship="sidart_torbaliBuradaModel.FK_Dosyalar_Konular" FromRole="Dosyalar" ToRole="Konular" />
+        </EntityType>
+        <EntityType Name="EmlakAltyapi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Altyapi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakBanyoSayisi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BanyoSayisi" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBanyoSayisi" FromRole="EmlakBanyoSayisi" ToRole="IlanlarEmlakGenel" />
+        </EntityType>
+        <EntityType Name="EmlakBinaYasi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BinaYasi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBinaYasi" FromRole="EmlakBinaYasi" ToRole="IlanlarEmlakGenel" />
+        </EntityType>
+        <EntityType Name="EmlakBulunduguKat">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="BulunduguKat" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBulunduguKat" FromRole="EmlakBulunduguKat" ToRole="IlanlarEmlakGenel" />
+        </EntityType>
+        <EntityType Name="EmlakCephe">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Cephe" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakDetayBilgisi">
+          <Key>
+            <PropertyRef Name="DetayBilgiID" />
+          </Key>
+          <Property Name="DetayBilgiID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DetayBilgi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="KategoriID" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+        </EntityType>
+        <EntityType Name="EmlakDisOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisOzellik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakGenelOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="GenelOzellikler" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakIcOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IcOzellik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakIlanTipi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakImarDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakDurumu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakIsitmaTuru">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Isitma" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakIsitmaTuru" FromRole="EmlakIsitmaTuru" ToRole="IlanlarEmlakGenel" />
+        </EntityType>
+        <EntityType Name="EmlakKategoriler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KategoriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ParentID" Type="Int32" />
+          <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Keyword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Durum" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.IlanKategori" FromRole="EmlakKategoriler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="EmlakKatSayisi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KatSayisi" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakKatSayisi" FromRole="EmlakKatSayisi" ToRole="IlanlarEmlakGenel" />
+        </EntityType>
+        <EntityType Name="EmlakKimden">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Kimden" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanKimden" Relationship="sidart_torbaliBuradaModel.FK_IlanKimden_EmlakKimden" FromRole="EmlakKimden" ToRole="IlanKimden" />
+        </EntityType>
+        <EntityType Name="EmlakKonutTipi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KonutTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakKullanimAmaci">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullanimAmaci" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakKullanimDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KullanimDurumu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakKullanimDurumu" FromRole="EmlakKullanimDurumu" ToRole="IlanlarEmlakGenel" />
+        </EntityType>
+        <EntityType Name="EmlakLocation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LocationName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="ParentID" Type="Int32" />
+          <Property Name="PlakaID" Type="Int32" />
+          <Property Name="Logo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanAdresler" Relationship="sidart_torbaliBuradaModel.FK_IlanAdresler_EmlakLocation" FromRole="EmlakLocation" ToRole="IlanAdresler" />
+        </EntityType>
+        <EntityType Name="EmlakManzara">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Manzara" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakMuhit">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Muhit" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakOdaSayisi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="OdaSayisi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakOdaSayisi" FromRole="EmlakOdaSayisi" ToRole="IlanlarEmlakGenel" />
+        </EntityType>
+        <EntityType Name="EmlakSiteIcerisinde">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SiteIcerisinde" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakSiteIcerisinde" FromRole="EmlakSiteIcerisinde" ToRole="IlanlarEmlakGenel" />
+        </EntityType>
+        <EntityType Name="EmlakTakasli">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Takasli" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanIlanlar_EmlakTakasli" FromRole="EmlakTakasli" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="EmlakTapuDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TapuDurumu" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakUlasim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ulasim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="EmlakYapiDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YapiDurumu" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="IlanYapiDurumu" Relationship="sidart_torbaliBuradaModel.FK_IlanYapiDurumu_EmlakYapiDurumu" FromRole="EmlakYapiDurumu" ToRole="IlanYapiDurumu" />
+        </EntityType>
+        <EntityType Name="EmlakYapiTipi">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="YapiTipi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Etiketler">
+          <Key>
+            <PropertyRef Name="EtiketID" />
+          </Key>
+          <Property Name="EtiketID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Etiket" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="KonuID" Type="Int32" />
+          <NavigationProperty Name="Konular" Relationship="sidart_torbaliBuradaModel.FK_Etiketler_Konular" FromRole="Etiketler" ToRole="Konular" />
+        </EntityType>
+        <EntityType Name="IlanAdresler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="LocationID" Type="Int32" />
+          <Property Name="Adres" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EmlakLocation" Relationship="sidart_torbaliBuradaModel.FK_IlanAdresler_EmlakLocation" FromRole="IlanAdresler" ToRole="EmlakLocation" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanAdresler_IlanIlanlar" FromRole="IlanAdresler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanCepheOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="DisOzellik" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanCepheOzellikler_IlanIlanlar" FromRole="IlanCepheOzellikler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanDisOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="DisOzellikler" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanDisOzellikler_IlanIlanlar" FromRole="IlanDisOzellikler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanIcOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="IcOzellikler" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanIcOzellikler_IlanIlanlar" FromRole="IlanIcOzellikler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanIlanlar">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Baslik" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Fiyat" Type="Decimal" Precision="18" Scale="2" />
+          <Property Name="MetreKare" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="TakasliID" Type="Int32" />
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="EmlakTakasli" Relationship="sidart_torbaliBuradaModel.FK_IlanIlanlar_EmlakTakasli" FromRole="IlanIlanlar" ToRole="EmlakTakasli" />
+          <NavigationProperty Name="IlanAdresler" Relationship="sidart_torbaliBuradaModel.FK_IlanAdresler_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanAdresler" />
+          <NavigationProperty Name="IlanCepheOzellikler" Relationship="sidart_torbaliBuradaModel.FK_IlanCepheOzellikler_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanCepheOzellikler" />
+          <NavigationProperty Name="IlanDisOzellikler" Relationship="sidart_torbaliBuradaModel.FK_IlanDisOzellikler_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanDisOzellikler" />
+          <NavigationProperty Name="IlanIcOzellikler" Relationship="sidart_torbaliBuradaModel.FK_IlanIcOzellikler_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanIcOzellikler" />
+          <NavigationProperty Name="IlanKimden" Relationship="sidart_torbaliBuradaModel.FK_IlanKimden_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanKimden" />
+          <NavigationProperty Name="IlanKonutTipiOzellikler" Relationship="sidart_torbaliBuradaModel.FK_IlanKonutTipiOzellikler_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanKonutTipiOzellikler" />
+          <NavigationProperty Name="IlanKullanimAmaci" Relationship="sidart_torbaliBuradaModel.FK_IlanKullanimAmaci_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanKullanimAmaci" />
+          <NavigationProperty Name="IlanlarEmlakGenel" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanlarEmlakGenel" />
+          <NavigationProperty Name="IlanManzaraOzellikler" Relationship="sidart_torbaliBuradaModel.FK_IlanManzaraOzellikler_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanManzaraOzellikler" />
+          <NavigationProperty Name="IlanMuhitOzellikler" Relationship="sidart_torbaliBuradaModel.FK_IlanMuhitOzellikler_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanMuhitOzellikler" />
+          <NavigationProperty Name="IlanUlasimOzellikler" Relationship="sidart_torbaliBuradaModel.FK_IlanUlasimOzellikler_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanUlasimOzellikler" />
+          <NavigationProperty Name="IlanYapiDurumu" Relationship="sidart_torbaliBuradaModel.FK_IlanYapiDurumu_IlanIlanlar" FromRole="IlanIlanlar" ToRole="IlanYapiDurumu" />
+          <NavigationProperty Name="EmlakKategoriler" Relationship="sidart_torbaliBuradaModel.IlanKategori" FromRole="IlanIlanlar" ToRole="EmlakKategoriler" />
+        </EntityType>
+        <EntityType Name="IlanKimden">
+          <Key>
+            <PropertyRef Name="IlanKimdenID" />
+          </Key>
+          <Property Name="IlanKimdenID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="KimdemID" Type="Int32" />
+          <NavigationProperty Name="EmlakKimden" Relationship="sidart_torbaliBuradaModel.FK_IlanKimden_EmlakKimden" FromRole="IlanKimden" ToRole="EmlakKimden" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanKimden_IlanIlanlar" FromRole="IlanKimden" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanKonutTipiOzellikler">
+          <Key>
+            <PropertyRef Name="IlanKonutTipiOzelliklerID" />
+          </Key>
+          <Property Name="IlanKonutTipiOzelliklerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="KonutTipiOzellikler" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanKonutTipiOzellikler_IlanIlanlar" FromRole="IlanKonutTipiOzellikler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanKullanimAmaci">
+          <Key>
+            <PropertyRef Name="IlanKullanimAmaciID" />
+          </Key>
+          <Property Name="IlanKullanimAmaciID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="KullanimAmaci" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanKullanimAmaci_IlanIlanlar" FromRole="IlanKullanimAmaci" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanlarEmlakGenel">
+          <Key>
+            <PropertyRef Name="IlanEmlakGenelID" />
+          </Key>
+          <Property Name="IlanEmlakGenelID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="OdaSayisiID" Type="Int32" />
+          <Property Name="BinaYasiID" Type="Int32" />
+          <Property Name="BulunduguKatID" Type="Int32" />
+          <Property Name="KatSayisiID" Type="Int32" />
+          <Property Name="IsitmaID" Type="Int32" />
+          <Property Name="BanyoSayisiID" Type="Int32" />
+          <Property Name="KullanimDurumuID" Type="Int32" />
+          <Property Name="SiteIcerisindeID" Type="Int32" />
+          <Property Name="Aidat" Type="Boolean" />
+          <NavigationProperty Name="EmlakBanyoSayisi" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBanyoSayisi" FromRole="IlanlarEmlakGenel" ToRole="EmlakBanyoSayisi" />
+          <NavigationProperty Name="EmlakBinaYasi" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBinaYasi" FromRole="IlanlarEmlakGenel" ToRole="EmlakBinaYasi" />
+          <NavigationProperty Name="EmlakBulunduguKat" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakBulunduguKat" FromRole="IlanlarEmlakGenel" ToRole="EmlakBulunduguKat" />
+          <NavigationProperty Name="EmlakIsitmaTuru" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakIsitmaTuru" FromRole="IlanlarEmlakGenel" ToRole="EmlakIsitmaTuru" />
+          <NavigationProperty Name="EmlakKatSayisi" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakKatSayisi" FromRole="IlanlarEmlakGenel" ToRole="EmlakKatSayisi" />
+          <NavigationProperty Name="EmlakKullanimDurumu" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakKullanimDurumu" FromRole="IlanlarEmlakGenel" ToRole="EmlakKullanimDurumu" />
+          <NavigationProperty Name="EmlakOdaSayisi" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakOdaSayisi" FromRole="IlanlarEmlakGenel" ToRole="EmlakOdaSayisi" />
+          <NavigationProperty Name="EmlakSiteIcerisinde" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_EmlakSiteIcerisinde" FromRole="IlanlarEmlakGenel" ToRole="EmlakSiteIcerisinde" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanlarEmlakGenel_IlanIlanlar" FromRole="IlanlarEmlakGenel" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanManzaraOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="ManzaraOzellikler" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanManzaraOzellikler_IlanIlanlar" FromRole="IlanManzaraOzellikler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanMuhitOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="MuhitOzellikler" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanMuhitOzellikler_IlanIlanlar" FromRole="IlanMuhitOzellikler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanUlasimOzellikler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="UlasimOzellikler" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanUlasimOzellikler_IlanIlanlar" FromRole="IlanUlasimOzellikler" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="IlanYapiDurumu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EmlakIlanID" Type="Int32" />
+          <Property Name="YapiDurumuID" Type="Int32" />
+          <NavigationProperty Name="EmlakYapiDurumu" Relationship="sidart_torbaliBuradaModel.FK_IlanYapiDurumu_EmlakYapiDurumu" FromRole="IlanYapiDurumu" ToRole="EmlakYapiDurumu" />
+          <NavigationProperty Name="IlanIlanlar" Relationship="sidart_torbaliBuradaModel.FK_IlanYapiDurumu_IlanIlanlar" FromRole="IlanYapiDurumu" ToRole="IlanIlanlar" />
+        </EntityType>
+        <EntityType Name="Kategoriler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KategoriAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Aciklama" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Seo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Keywords" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Statu" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="ParentID" Type="Int32" />
+          <Property Name="Url" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="Icon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Konular" Relationship="sidart_torbaliBuradaModel.KategoriKonu" FromRole="Kategoriler" ToRole="Konular" />
+        </EntityType>
+        <EntityType Name="Konular">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Baslik" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="KisaIcerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="UzunIcerik" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Resim" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="3" />
+          <Property Name="Statu" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="OkunmaSayisi" Type="Int32" />
+          <Property Name="YorumSayisi" Type="Int32" />
+          <Property Name="Dosya" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Manset" Type="Int32" />
+          <Property Name="Seo" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+          <Property Name="Description" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Dosyalar" Relationship="sidart_torbaliBuradaModel.FK_Dosyalar_Konular" FromRole="Konular" ToRole="Dosyalar" />
+          <NavigationProperty Name="Etiketler" Relationship="sidart_torbaliBuradaModel.FK_Etiketler_Konular" FromRole="Konular" ToRole="Etiketler" />
+          <NavigationProperty Name="Resimler" Relationship="sidart_torbaliBuradaModel.FK_Resimler_Konular" FromRole="Konular" ToRole="Resimler" />
+          <NavigationProperty Name="Kategoriler" Relationship="sidart_torbaliBuradaModel.KategoriKonu" FromRole="Konular" ToRole="Kategoriler" />
+        </EntityType>
+        <EntityType Name="Resimler">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="KonuID" Type="Int32" />
+          <Property Name="Resim" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Konular" Relationship="sidart_torbaliBuradaModel.FK_Resimler_Konular" FromRole="Resimler" ToRole="Konular" />
+        </EntityType>
+        <EntityType Name="ZiyaretciUrl">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Ip" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="RefererUrl" Type="String" MaxLength="350" FixedLength="false" Unicode="true" />
+          <Property Name="GetUrl" Type="String" MaxLength="550" FixedLength="false" Unicode="true" />
+          <Property Name="Browser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Tarih" Type="DateTime" Precision="0" />
+        </EntityType>
+        <Association Name="FK_Dosyalar_Konular">
+          <End Type="sidart_torbaliBuradaModel.Konular" Role="Konular" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.Dosyalar" Role="Dosyalar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Konular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Dosyalar">
+              <PropertyRef Name="KonuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakBanyoSayisi">
+          <End Type="sidart_torbaliBuradaModel.EmlakBanyoSayisi" Role="EmlakBanyoSayisi" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakBanyoSayisi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="BanyoSayisiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakBinaYasi">
+          <End Type="sidart_torbaliBuradaModel.EmlakBinaYasi" Role="EmlakBinaYasi" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakBinaYasi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="BinaYasiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakBulunduguKat">
+          <End Type="sidart_torbaliBuradaModel.EmlakBulunduguKat" Role="EmlakBulunduguKat" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakBulunduguKat">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="BulunduguKatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakIsitmaTuru">
+          <End Type="sidart_torbaliBuradaModel.EmlakIsitmaTuru" Role="EmlakIsitmaTuru" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakIsitmaTuru">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="IsitmaID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakKatSayisi">
+          <End Type="sidart_torbaliBuradaModel.EmlakKatSayisi" Role="EmlakKatSayisi" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakKatSayisi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="KatSayisiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKimden_EmlakKimden">
+          <End Type="sidart_torbaliBuradaModel.EmlakKimden" Role="EmlakKimden" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanKimden" Role="IlanKimden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakKimden">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKimden">
+              <PropertyRef Name="KimdemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakKullanimDurumu">
+          <End Type="sidart_torbaliBuradaModel.EmlakKullanimDurumu" Role="EmlakKullanimDurumu" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakKullanimDurumu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="KullanimDurumuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanAdresler_EmlakLocation">
+          <End Type="sidart_torbaliBuradaModel.EmlakLocation" Role="EmlakLocation" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanAdresler" Role="IlanAdresler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakLocation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanAdresler">
+              <PropertyRef Name="LocationID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakOdaSayisi">
+          <End Type="sidart_torbaliBuradaModel.EmlakOdaSayisi" Role="EmlakOdaSayisi" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakOdaSayisi">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="OdaSayisiID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_EmlakSiteIcerisinde">
+          <End Type="sidart_torbaliBuradaModel.EmlakSiteIcerisinde" Role="EmlakSiteIcerisinde" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakSiteIcerisinde">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="SiteIcerisindeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanIlanlar_EmlakTakasli">
+          <End Type="sidart_torbaliBuradaModel.EmlakTakasli" Role="EmlakTakasli" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakTakasli">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanIlanlar">
+              <PropertyRef Name="TakasliID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanYapiDurumu_EmlakYapiDurumu">
+          <End Type="sidart_torbaliBuradaModel.EmlakYapiDurumu" Role="EmlakYapiDurumu" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanYapiDurumu" Role="IlanYapiDurumu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EmlakYapiDurumu">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanYapiDurumu">
+              <PropertyRef Name="YapiDurumuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Etiketler_Konular">
+          <End Type="sidart_torbaliBuradaModel.Konular" Role="Konular" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.Etiketler" Role="Etiketler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Konular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Etiketler">
+              <PropertyRef Name="KonuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanAdresler_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanAdresler" Role="IlanAdresler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanAdresler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanCepheOzellikler_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanCepheOzellikler" Role="IlanCepheOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanCepheOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanDisOzellikler_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanDisOzellikler" Role="IlanDisOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanDisOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanIcOzellikler_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanIcOzellikler" Role="IlanIcOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanIcOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKimden_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanKimden" Role="IlanKimden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKimden">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKonutTipiOzellikler_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanKonutTipiOzellikler" Role="IlanKonutTipiOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKonutTipiOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanKullanimAmaci_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanKullanimAmaci" Role="IlanKullanimAmaci" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanKullanimAmaci">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanlarEmlakGenel_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanlarEmlakGenel" Role="IlanlarEmlakGenel" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanlarEmlakGenel">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanManzaraOzellikler_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanManzaraOzellikler" Role="IlanManzaraOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanManzaraOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanMuhitOzellikler_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanMuhitOzellikler" Role="IlanMuhitOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanMuhitOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanUlasimOzellikler_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanUlasimOzellikler" Role="IlanUlasimOzellikler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanUlasimOzellikler">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_IlanYapiDurumu_IlanIlanlar">
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.IlanYapiDurumu" Role="IlanYapiDurumu" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="IlanIlanlar">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="IlanYapiDurumu">
+              <PropertyRef Name="EmlakIlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Resimler_Konular">
+          <End Type="sidart_torbaliBuradaModel.Konular" Role="Konular" Multiplicity="0..1" />
+          <End Type="sidart_torbaliBuradaModel.Resimler" Role="Resimler" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Konular">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Resimler">
+              <PropertyRef Name="KonuID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="IlanKategori">
+          <End Type="sidart_torbaliBuradaModel.EmlakKategoriler" Role="EmlakKategoriler" Multiplicity="*" />
+          <End Type="sidart_torbaliBuradaModel.IlanIlanlar" Role="IlanIlanlar" Multiplicity="*" />
+        </Association>
+        <Association Name="KategoriKonu">
+          <End Type="sidart_torbaliBuradaModel.Kategoriler" Role="Kategoriler" Multiplicity="*" />
+          <End Type="sidart_torbaliBuradaModel.Konular" Role="Konular" Multiplicity="*" />
+        </Association>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="sidart_torbaliBuradaModelStoreContainer" CdmEntityContainer="sidart_torbaliBuradaEntities">
+          <EntitySetMapping Name="ArsaGenelOzelikleri">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.ArsaGenelOzelikleri">
+              <MappingFragment StoreEntitySet="ArsaGenelOzelikleri">
+                <ScalarProperty Name="ArsaGenelOzellik" ColumnName="ArsaGenelOzellik" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArsaKonumu">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.ArsaKonumu">
+              <MappingFragment StoreEntitySet="ArsaKonumu">
+                <ScalarProperty Name="ArsaKonum" ColumnName="ArsaKonum" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ArsaManzara">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.ArsaManzara">
+              <MappingFragment StoreEntitySet="ArsaManzara">
+                <ScalarProperty Name="ArsaManzarasi" ColumnName="ArsaManzarasi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Bulten">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.Bulten">
+              <MappingFragment StoreEntitySet="Bulten">
+                <ScalarProperty Name="Durumu" ColumnName="Durumu" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+                <ScalarProperty Name="BultenID" ColumnName="BultenID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Dosyalar">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.Dosyalar">
+              <MappingFragment StoreEntitySet="Dosyalar">
+                <ScalarProperty Name="DosyaAd" ColumnName="DosyaAd" />
+                <ScalarProperty Name="KonuID" ColumnName="KonuID" />
+                <ScalarProperty Name="DosyaID" ColumnName="DosyaID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakAltyapi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakAltyapi">
+              <MappingFragment StoreEntitySet="EmlakAltyapi">
+                <ScalarProperty Name="Altyapi" ColumnName="Altyapi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakBanyoSayisi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakBanyoSayisi">
+              <MappingFragment StoreEntitySet="EmlakBanyoSayisi">
+                <ScalarProperty Name="BanyoSayisi" ColumnName="BanyoSayisi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakBinaYasi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakBinaYasi">
+              <MappingFragment StoreEntitySet="EmlakBinaYasi">
+                <ScalarProperty Name="BinaYasi" ColumnName="BinaYasi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakBulunduguKat">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakBulunduguKat">
+              <MappingFragment StoreEntitySet="EmlakBulunduguKat">
+                <ScalarProperty Name="BulunduguKat" ColumnName="BulunduguKat" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakCephe">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakCephe">
+              <MappingFragment StoreEntitySet="EmlakCephe">
+                <ScalarProperty Name="Cephe" ColumnName="Cephe" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakDetayBilgisi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakDetayBilgisi">
+              <MappingFragment StoreEntitySet="EmlakDetayBilgisi">
+                <ScalarProperty Name="KategoriID" ColumnName="KategoriID" />
+                <ScalarProperty Name="DetayBilgi" ColumnName="DetayBilgi" />
+                <ScalarProperty Name="DetayBilgiID" ColumnName="DetayBilgiID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakDisOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakDisOzellikler">
+              <MappingFragment StoreEntitySet="EmlakDisOzellikler">
+                <ScalarProperty Name="DisOzellik" ColumnName="DisOzellik" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakGenelOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakGenelOzellikler">
+              <MappingFragment StoreEntitySet="EmlakGenelOzellikler">
+                <ScalarProperty Name="GenelOzellikler" ColumnName="GenelOzellikler" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakIcOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakIcOzellikler">
+              <MappingFragment StoreEntitySet="EmlakIcOzellikler">
+                <ScalarProperty Name="IcOzellik" ColumnName="IcOzellik" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakIlanTipi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakIlanTipi">
+              <MappingFragment StoreEntitySet="EmlakIlanTipi">
+                <ScalarProperty Name="EmlakTipi" ColumnName="EmlakTipi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakImarDurumu">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakImarDurumu">
+              <MappingFragment StoreEntitySet="EmlakImarDurumu">
+                <ScalarProperty Name="EmlakDurumu" ColumnName="EmlakDurumu" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakIsitmaTuru">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakIsitmaTuru">
+              <MappingFragment StoreEntitySet="EmlakIsitmaTuru">
+                <ScalarProperty Name="Isitma" ColumnName="Isitma" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakKategoriler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakKategoriler">
+              <MappingFragment StoreEntitySet="EmlakKategoriler">
+                <ScalarProperty Name="Durum" ColumnName="Durum" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Keyword" ColumnName="Keyword" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="KategoriAd" ColumnName="KategoriAd" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakKatSayisi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakKatSayisi">
+              <MappingFragment StoreEntitySet="EmlakKatSayisi">
+                <ScalarProperty Name="KatSayisi" ColumnName="KatSayisi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakKimden">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakKimden">
+              <MappingFragment StoreEntitySet="EmlakKimden">
+                <ScalarProperty Name="Kimden" ColumnName="Kimden" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakKonutTipi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakKonutTipi">
+              <MappingFragment StoreEntitySet="EmlakKonutTipi">
+                <ScalarProperty Name="KonutTipi" ColumnName="KonutTipi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakKullanimAmaci">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakKullanimAmaci">
+              <MappingFragment StoreEntitySet="EmlakKullanimAmaci">
+                <ScalarProperty Name="KullanimAmaci" ColumnName="KullanimAmaci" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakKullanimDurumu">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakKullanimDurumu">
+              <MappingFragment StoreEntitySet="EmlakKullanimDurumu">
+                <ScalarProperty Name="KullanimDurumu" ColumnName="KullanimDurumu" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakLocation">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakLocation">
+              <MappingFragment StoreEntitySet="EmlakLocation">
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Logo" ColumnName="Logo" />
+                <ScalarProperty Name="PlakaID" ColumnName="PlakaID" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="LocationName" ColumnName="LocationName" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakManzara">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakManzara">
+              <MappingFragment StoreEntitySet="EmlakManzara">
+                <ScalarProperty Name="Manzara" ColumnName="Manzara" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakMuhit">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakMuhit">
+              <MappingFragment StoreEntitySet="EmlakMuhit">
+                <ScalarProperty Name="Muhit" ColumnName="Muhit" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakOdaSayisi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakOdaSayisi">
+              <MappingFragment StoreEntitySet="EmlakOdaSayisi">
+                <ScalarProperty Name="OdaSayisi" ColumnName="OdaSayisi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakSiteIcerisinde">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakSiteIcerisinde">
+              <MappingFragment StoreEntitySet="EmlakSiteIcerisinde">
+                <ScalarProperty Name="SiteIcerisinde" ColumnName="SiteIcerisinde" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakTakasli">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakTakasli">
+              <MappingFragment StoreEntitySet="EmlakTakasli">
+                <ScalarProperty Name="Takasli" ColumnName="Takasli" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakTapuDurumu">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakTapuDurumu">
+              <MappingFragment StoreEntitySet="EmlakTapuDurumu">
+                <ScalarProperty Name="TapuDurumu" ColumnName="TapuDurumu" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakUlasim">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakUlasim">
+              <MappingFragment StoreEntitySet="EmlakUlasim">
+                <ScalarProperty Name="Ulasim" ColumnName="Ulasim" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakYapiDurumu">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakYapiDurumu">
+              <MappingFragment StoreEntitySet="EmlakYapiDurumu">
+                <ScalarProperty Name="YapiDurumu" ColumnName="YapiDurumu" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EmlakYapiTipi">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.EmlakYapiTipi">
+              <MappingFragment StoreEntitySet="EmlakYapiTipi">
+                <ScalarProperty Name="YapiTipi" ColumnName="YapiTipi" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Etiketler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.Etiketler">
+              <MappingFragment StoreEntitySet="Etiketler">
+                <ScalarProperty Name="KonuID" ColumnName="KonuID" />
+                <ScalarProperty Name="Etiket" ColumnName="Etiket" />
+                <ScalarProperty Name="EtiketID" ColumnName="EtiketID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanAdresler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanAdresler">
+              <MappingFragment StoreEntitySet="IlanAdresler">
+                <ScalarProperty Name="Adres" ColumnName="Adres" />
+                <ScalarProperty Name="LocationID" ColumnName="LocationID" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanCepheOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanCepheOzellikler">
+              <MappingFragment StoreEntitySet="IlanCepheOzellikler">
+                <ScalarProperty Name="DisOzellik" ColumnName="DisOzellik" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanDisOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanDisOzellikler">
+              <MappingFragment StoreEntitySet="IlanDisOzellikler">
+                <ScalarProperty Name="DisOzellikler" ColumnName="DisOzellikler" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanIcOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanIcOzellikler">
+              <MappingFragment StoreEntitySet="IlanIcOzellikler">
+                <ScalarProperty Name="IcOzellikler" ColumnName="IcOzellikler" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanIlanlar">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanIlanlar">
+              <MappingFragment StoreEntitySet="IlanIlanlar">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="TakasliID" ColumnName="TakasliID" />
+                <ScalarProperty Name="MetreKare" ColumnName="MetreKare" />
+                <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanKimden">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanKimden">
+              <MappingFragment StoreEntitySet="IlanKimden">
+                <ScalarProperty Name="KimdemID" ColumnName="KimdemID" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="IlanKimdenID" ColumnName="IlanKimdenID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanKonutTipiOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanKonutTipiOzellikler">
+              <MappingFragment StoreEntitySet="IlanKonutTipiOzellikler">
+                <ScalarProperty Name="KonutTipiOzellikler" ColumnName="KonutTipiOzellikler" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="IlanKonutTipiOzelliklerID" ColumnName="IlanKonutTipiOzelliklerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanKullanimAmaci">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanKullanimAmaci">
+              <MappingFragment StoreEntitySet="IlanKullanimAmaci">
+                <ScalarProperty Name="KullanimAmaci" ColumnName="KullanimAmaci" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="IlanKullanimAmaciID" ColumnName="IlanKullanimAmaciID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanlarEmlakGenel">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanlarEmlakGenel">
+              <MappingFragment StoreEntitySet="IlanlarEmlakGenel">
+                <ScalarProperty Name="Aidat" ColumnName="Aidat" />
+                <ScalarProperty Name="SiteIcerisindeID" ColumnName="SiteIcerisindeID" />
+                <ScalarProperty Name="KullanimDurumuID" ColumnName="KullanimDurumuID" />
+                <ScalarProperty Name="BanyoSayisiID" ColumnName="BanyoSayisiID" />
+                <ScalarProperty Name="IsitmaID" ColumnName="IsitmaID" />
+                <ScalarProperty Name="KatSayisiID" ColumnName="KatSayisiID" />
+                <ScalarProperty Name="BulunduguKatID" ColumnName="BulunduguKatID" />
+                <ScalarProperty Name="BinaYasiID" ColumnName="BinaYasiID" />
+                <ScalarProperty Name="OdaSayisiID" ColumnName="OdaSayisiID" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="IlanEmlakGenelID" ColumnName="IlanEmlakGenelID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanManzaraOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanManzaraOzellikler">
+              <MappingFragment StoreEntitySet="IlanManzaraOzellikler">
+                <ScalarProperty Name="ManzaraOzellikler" ColumnName="ManzaraOzellikler" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanMuhitOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanMuhitOzellikler">
+              <MappingFragment StoreEntitySet="IlanMuhitOzellikler">
+                <ScalarProperty Name="MuhitOzellikler" ColumnName="MuhitOzellikler" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanUlasimOzellikler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanUlasimOzellikler">
+              <MappingFragment StoreEntitySet="IlanUlasimOzellikler">
+                <ScalarProperty Name="UlasimOzellikler" ColumnName="UlasimOzellikler" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IlanYapiDurumu">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.IlanYapiDurumu">
+              <MappingFragment StoreEntitySet="IlanYapiDurumu">
+                <ScalarProperty Name="YapiDurumuID" ColumnName="YapiDurumuID" />
+                <ScalarProperty Name="EmlakIlanID" ColumnName="EmlakIlanID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Kategoriler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.Kategoriler">
+              <MappingFragment StoreEntitySet="Kategoriler">
+                <ScalarProperty Name="Icon" ColumnName="Icon" />
+                <ScalarProperty Name="Url" ColumnName="Url" />
+                <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+                <ScalarProperty Name="Statu" ColumnName="Statu" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+                <ScalarProperty Name="Seo" ColumnName="Seo" />
+                <ScalarProperty Name="Aciklama" ColumnName="Aciklama" />
+                <ScalarProperty Name="KategoriAd" ColumnName="KategoriAd" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Konular">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.Konular">
+              <MappingFragment StoreEntitySet="Konular">
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="Seo" ColumnName="Seo" />
+                <ScalarProperty Name="Manset" ColumnName="Manset" />
+                <ScalarProperty Name="Dosya" ColumnName="Dosya" />
+                <ScalarProperty Name="YorumSayisi" ColumnName="YorumSayisi" />
+                <ScalarProperty Name="OkunmaSayisi" ColumnName="OkunmaSayisi" />
+                <ScalarProperty Name="Statu" ColumnName="Statu" />
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="UzunIcerik" ColumnName="UzunIcerik" />
+                <ScalarProperty Name="KisaIcerik" ColumnName="KisaIcerik" />
+                <ScalarProperty Name="Baslik" ColumnName="Baslik" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Resimler">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.Resimler">
+              <MappingFragment StoreEntitySet="Resimler">
+                <ScalarProperty Name="Resim" ColumnName="Resim" />
+                <ScalarProperty Name="KonuID" ColumnName="KonuID" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ZiyaretciUrl">
+            <EntityTypeMapping TypeName="sidart_torbaliBuradaModel.ZiyaretciUrl">
+              <MappingFragment StoreEntitySet="ZiyaretciUrl">
+                <ScalarProperty Name="Tarih" ColumnName="Tarih" />
+                <ScalarProperty Name="Browser" ColumnName="Browser" />
+                <ScalarProperty Name="GetUrl" ColumnName="GetUrl" />
+                <ScalarProperty Name="RefererUrl" ColumnName="RefererUrl" />
+                <ScalarProperty Name="Ip" ColumnName="Ip" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="IlanKategori" TypeName="sidart_torbaliBuradaModel.IlanKategori" StoreEntitySet="IlanKategori">
+            <EndProperty Name="IlanIlanlar">
+              <ScalarProperty Name="Id" ColumnName="EmlakIlanID" />
+            </EndProperty>
+            <EndProperty Name="EmlakKategoriler">
+              <ScalarProperty Name="Id" ColumnName="KategoriID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="KategoriKonu" TypeName="sidart_torbaliBuradaModel.KategoriKonu" StoreEntitySet="KategoriKonu">
+            <EndProperty Name="Konular">
+              <ScalarProperty Name="Id" ColumnName="KonuID" />
+            </EndProperty>
+            <EndProperty Name="Kategoriler">
+              <ScalarProperty Name="Id" ColumnName="Id" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,15 @@
+﻿<ul class="list-group" ng-show="getKategorilerSatilik.result">
+    <li class="list-group-item fontsize-14"> Türünü Seçiniz</li>
+    <li class="list-group-item" ng-repeat="kat in getKategorilerSatilik.result" ng-cloak>
+        <div class="funkyradio">
+            <div class="funkyradio-success">
+                <input type="radio" name="radioIki" ng-click="clickSemt(kat.id)" id="kat{{kat.id}}" ng-model="parametersearch.SatilikId" value="{{kat.id}}" />
+                <label class="bold" style="background-color:#fff;" for="kat{{kat.id}}">{{kat.kategoriAd}}</label>
+            </div>
+        </div>
+    </li>
+
+    @*<li class="list-group-item list-group-item-info" style="padding-bottom:13px; padding-top:13px">
+            <button class="btn btn-success js-scroll-tur bold" style="display: block; width: 100%; background-color:#1889C1;">İlerle >></button>
+        </li>*@
+</ul>

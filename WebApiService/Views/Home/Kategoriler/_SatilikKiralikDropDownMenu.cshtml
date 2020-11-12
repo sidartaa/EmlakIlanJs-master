@@ -1,0 +1,36 @@
+﻿<a class="btn btn-default btn-select btn-select-light">
+    <input ng-model="parameter.id" type="hidden" class="btn btn-select-input" id="" name="" value="" />
+    <span class="btn btn-select-value kategori">
+        <i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+        İlan Kategorisi Seçiniz
+    </span>
+    <span class='btn btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+    <ul>
+        <li ng-repeat="kat in getKategorilerSatilik.result"
+            ng-click="clickSemt(kat.id)"
+            id="kat{{kat.id}}"
+            ng-model="parametersearch.SatilikId">
+            {{kat.kategoriAd}}
+        </li>
+
+    </ul>
+</a>
+
+@*<select class="selectpicker" title="İlan Türünü Seçiniz" ng-model="parameters.SatilikId" ng-change="clickSemt(parameters.SatilikId)">
+    <option ng-repeat="katt in getKategorilerSatilik.result" ng-show="getKategorilerSatilik.result" ng-cloak value="{{katt.id}}">{{katt.kategoriAd}}</option>
+</select>*@
+
+@*<a class="btn btn-default btn-select btn-select-light">
+    <input type="hidden" class="btn-select-input" id="" name="" value="" />
+    <span class="btn btn-select-value satilik"><i class='fa fa-hand-pointer-o' aria-hidden='true'></i> İlan Türünü Seçiniz</span>
+    <span class='btn-select-arrow glyphicon glyphicon-chevron-down'></span>
+    <ul>
+        <li ng-repeat="kat in getKategorilerSatilik.result" 
+            ng-click="clickSemt(kat.id)" 
+            id="kat{{kat.id}}" 
+            ng-model="parametersearch.SatilikId"
+        >
+            {{kat.kategoriAd}}
+        </li>
+    </ul>
+</a>*@

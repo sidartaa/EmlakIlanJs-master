@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DD0E834B-414E-49E8-B692-743C14A5B33F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TorbaliBurada.Data.Entities</RootNamespace>
+    <AssemblyName>TorbaliBurada.Data.Entities</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArsaGenelOzelikleri.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArsaKonumu.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ArsaManzara.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Bulten.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Dosyalar.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakAltyapi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakBanyoSayisi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakBinaYasi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakBulunduguKat.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakCephe.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakDetayBilgisi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakDisOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakGenelOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakIcOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakIlanTipi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakImarDurumu.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakIsitmaTuru.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakKategoriler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakKatSayisi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakKimden.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakKonutTipi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakKullanimAmaci.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakKullanimDurumu.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakLocation.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakManzara.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakMuhit.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakOdaSayisi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakSiteIcerisinde.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakTakasli.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakTapuDurumu.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakUlasim.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakYapiDurumu.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmlakYapiTipi.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="Etiketler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanAdresler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanCepheOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanDisOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanIcOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanIlanlar.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanKimden.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanKonutTipiOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanKullanimAmaci.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanlarEmlakGenel.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanManzaraOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanMuhitOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanUlasimOzellikler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="IlanYapiDurumu.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Konular.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resimler.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TorbaliBuradaModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TorbaliBuradaModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TorbaliBuradaModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TorbaliBuradaModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TorbaliBuradaModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="ZiyaretciUrl.cs">
+      <DependentUpon>TorbaliBuradaModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="TorbaliBuradaModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TorbaliBuradaModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="packages.config" />
+    <None Include="TorbaliBuradaModel.edmx.diagram">
+      <DependentUpon>TorbaliBuradaModel.edmx</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TorbaliBuradaModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TorbaliBuradaModel.Context.cs</LastGenOutput>
+      <DependentUpon>TorbaliBuradaModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="TorbaliBuradaModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>TorbaliBuradaModel.edmx</DependentUpon>
+      <LastGenOutput>TorbaliBuradaModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
